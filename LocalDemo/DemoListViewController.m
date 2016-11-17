@@ -9,6 +9,7 @@
 #import "DemoListViewController.h"
 #import "GeneralLogViewController.h"
 #import "UniqueString.h"
+#import "JSPatchDemoViewController.h"
 
 @interface DemoListViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -40,6 +41,10 @@
         }
         
     }else{
+        if (indexPath.row == 0) {
+            JSPatchDemoViewController *jspatchVC = [[JSPatchDemoViewController alloc]init];
+            [self.navigationController pushViewController:jspatchVC animated:YES];
+        }
         
     }
     

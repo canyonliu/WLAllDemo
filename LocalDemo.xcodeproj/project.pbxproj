@@ -18,6 +18,7 @@
 		F821A6051DDDA0EC00785B6D /* DemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A6041DDDA0EC00785B6D /* DemoListViewController.m */; };
 		F821A6091DDDA85400785B6D /* UniqueString.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A6081DDDA85400785B6D /* UniqueString.m */; };
 		F821A6101DDDA9EE00785B6D /* GeneralLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A60F1DDDA9EE00785B6D /* GeneralLogViewController.m */; };
+		F821A61D1DDDDA8A00785B6D /* JSPatchDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A61C1DDDDA8A00785B6D /* JSPatchDemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,9 @@
 		F821A6081DDDA85400785B6D /* UniqueString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UniqueString.m; sourceTree = "<group>"; };
 		F821A60E1DDDA9EE00785B6D /* GeneralLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralLogViewController.h; sourceTree = "<group>"; };
 		F821A60F1DDDA9EE00785B6D /* GeneralLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralLogViewController.m; sourceTree = "<group>"; };
+		F821A61B1DDDDA8A00785B6D /* JSPatchDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSPatchDemoViewController.h; path = JSpatchDemo/JSPatchDemoViewController.h; sourceTree = "<group>"; };
+		F821A61C1DDDDA8A00785B6D /* JSPatchDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSPatchDemoViewController.m; path = JSpatchDemo/JSPatchDemoViewController.m; sourceTree = "<group>"; };
+		F821A61E1DDDDEB300785B6D /* LocalDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LocalDemo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,7 @@
 		F821A5CF1DDD5C0C00785B6D /* LocalDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F821A61E1DDDDEB300785B6D /* LocalDemo.entitlements */,
 				F821A5D31DDD5C0C00785B6D /* AppDelegate.h */,
 				F821A5D41DDD5C0C00785B6D /* AppDelegate.m */,
 				F821A6031DDDA0EC00785B6D /* DemoListViewController.h */,
@@ -175,6 +180,7 @@
 		F821A6061DDDA81600785B6D /* DetailDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F821A6151DDDD52200785B6D /* JSPatch实战 */,
 				F821A6071DDDA85400785B6D /* UniqueString.h */,
 				F821A6081DDDA85400785B6D /* UniqueString.m */,
 			);
@@ -188,6 +194,15 @@
 				F821A60F1DDDA9EE00785B6D /* GeneralLogViewController.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		F821A6151DDDD52200785B6D /* JSPatch实战 */ = {
+			isa = PBXGroup;
+			children = (
+				F821A61B1DDDDA8A00785B6D /* JSPatchDemoViewController.h */,
+				F821A61C1DDDDA8A00785B6D /* JSPatchDemoViewController.m */,
+			);
+			name = "JSPatch实战";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +275,13 @@
 				TargetAttributes = {
 					F821A5CC1DDD5C0C00785B6D = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = AL7VT7FHH8;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					F821A5E51DDD5C0C00785B6D = {
 						CreatedOnToolsVersion = 8.0;
@@ -379,6 +400,7 @@
 				F821A5D21DDD5C0C00785B6D /* main.m in Sources */,
 				F821A6051DDDA0EC00785B6D /* DemoListViewController.m in Sources */,
 				F821A6091DDDA85400785B6D /* UniqueString.m in Sources */,
+				F821A61D1DDDDA8A00785B6D /* JSPatchDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +548,8 @@
 			baseConfigurationReference = 8BFCBC1788C2D632F293587D /* Pods-LocalDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LocalDemo/LocalDemo.entitlements;
+				DEVELOPMENT_TEAM = AL7VT7FHH8;
 				INFOPLIST_FILE = LocalDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Baidu.LocalDemo;
@@ -538,6 +562,8 @@
 			baseConfigurationReference = 408029C9342F6538B4AF7D12 /* Pods-LocalDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LocalDemo/LocalDemo.entitlements;
+				DEVELOPMENT_TEAM = AL7VT7FHH8;
 				INFOPLIST_FILE = LocalDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Baidu.LocalDemo;

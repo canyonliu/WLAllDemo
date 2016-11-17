@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "DemoListViewController.h"
+//#import<JSPatch/JSPatch.h>
+#import "JSPatchPlatform/JSPatch.h"
+
 
 @interface AppDelegate ()
 
@@ -23,6 +26,14 @@
     self.window = [[UIWindow alloc]init];
     [self.window setRootViewController:nav];
     [self.window makeKeyAndVisible];
+//    用于测试本地mian.js是否能够运行成功
+//    [JSPatch testScriptInBundle];
+    
+    //线上
+    [JSPatch startWithAppKey:@"fb18bf56d1d8f928"];
+    [JSPatch sync];
+    
+
     
     return YES;
 }
