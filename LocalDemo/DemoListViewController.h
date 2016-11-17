@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DemoListViewController.h
 //  LocalDemo
 //
 //  Created by Liu,Qingcan on 2016/11/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface DemoListViewController : UIViewController
 
 @end
-
