@@ -8,6 +8,11 @@
 
 #import "JSPatchDemoViewController.h"
 
+
+
+/**
+ 在官网上上传了一个main.js的脚本，用于下发数据
+ */
 @interface JSPatchDemoViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic,weak)UITableView*table;
@@ -110,14 +115,14 @@
 
 
 
-#pragma mark Event
-- (void)addData{
-//    NSString *datas = @"";
-////
-//    [self.dataArray addObject:datas];
-////
-//    [self.table reloadData];
-}
+#pragma mark Event  main.js中重写了
+//- (void)addData{
+////    NSString *datas = @"";
+//////
+////    [self.dataArray addObject:datas];
+//////
+////    [self.table reloadData];
+//}
 
 
 

@@ -19,6 +19,13 @@
 		F821A6091DDDA85400785B6D /* UniqueString.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A6081DDDA85400785B6D /* UniqueString.m */; };
 		F821A6101DDDA9EE00785B6D /* GeneralLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A60F1DDDA9EE00785B6D /* GeneralLogViewController.m */; };
 		F821A61D1DDDDA8A00785B6D /* JSPatchDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A61C1DDDDA8A00785B6D /* JSPatchDemoViewController.m */; };
+		F821A6341DDE9DDB00785B6D /* WLCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A6251DDE9DDB00785B6D /* WLCollectionViewController.m */; };
+		F821A6351DDE9DDB00785B6D /* CalenderDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A6281DDE9DDB00785B6D /* CalenderDataSource.m */; };
+		F821A6361DDE9DDB00785B6D /* SampleDayEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A62A1DDE9DDB00785B6D /* SampleDayEvent.m */; };
+		F821A6371DDE9DDB00785B6D /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A62D1DDE9DDB00785B6D /* HeaderView.m */; };
+		F821A6381DDE9DDB00785B6D /* WLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A62F1DDE9DDB00785B6D /* WLCollectionViewCell.m */; };
+		F821A6391DDE9DDB00785B6D /* WLCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A6311DDE9DDB00785B6D /* WLCollectionViewLayout.m */; };
+		F821A63A1DDE9DDB00785B6D /* WLCollectioView.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A6331DDE9DDB00785B6D /* WLCollectioView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +72,21 @@
 		F821A61B1DDDDA8A00785B6D /* JSPatchDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSPatchDemoViewController.h; path = JSpatchDemo/JSPatchDemoViewController.h; sourceTree = "<group>"; };
 		F821A61C1DDDDA8A00785B6D /* JSPatchDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSPatchDemoViewController.m; path = JSpatchDemo/JSPatchDemoViewController.m; sourceTree = "<group>"; };
 		F821A61E1DDDDEB300785B6D /* LocalDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LocalDemo.entitlements; sourceTree = "<group>"; };
+		F821A6221DDE9DDB00785B6D /* CalenderEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalenderEvent.h; sourceTree = "<group>"; };
+		F821A6241DDE9DDB00785B6D /* WLCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCollectionViewController.h; sourceTree = "<group>"; };
+		F821A6251DDE9DDB00785B6D /* WLCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectionViewController.m; sourceTree = "<group>"; };
+		F821A6271DDE9DDB00785B6D /* CalenderDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalenderDataSource.h; sourceTree = "<group>"; };
+		F821A6281DDE9DDB00785B6D /* CalenderDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalenderDataSource.m; sourceTree = "<group>"; };
+		F821A6291DDE9DDB00785B6D /* SampleDayEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleDayEvent.h; sourceTree = "<group>"; };
+		F821A62A1DDE9DDB00785B6D /* SampleDayEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleDayEvent.m; sourceTree = "<group>"; };
+		F821A62C1DDE9DDB00785B6D /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		F821A62D1DDE9DDB00785B6D /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		F821A62E1DDE9DDB00785B6D /* WLCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCollectionViewCell.h; sourceTree = "<group>"; };
+		F821A62F1DDE9DDB00785B6D /* WLCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectionViewCell.m; sourceTree = "<group>"; };
+		F821A6301DDE9DDB00785B6D /* WLCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCollectionViewLayout.h; sourceTree = "<group>"; };
+		F821A6311DDE9DDB00785B6D /* WLCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectionViewLayout.m; sourceTree = "<group>"; };
+		F821A6321DDE9DDB00785B6D /* WLCollectioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCollectioView.h; sourceTree = "<group>"; };
+		F821A6331DDE9DDB00785B6D /* WLCollectioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectioView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +202,7 @@
 		F821A6061DDDA81600785B6D /* DetailDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F821A6211DDE9DDB00785B6D /* CollectioView(日历)实战 */,
 				F821A6151DDDD52200785B6D /* JSPatch实战 */,
 				F821A6071DDDA85400785B6D /* UniqueString.h */,
 				F821A6081DDDA85400785B6D /* UniqueString.m */,
@@ -203,6 +226,52 @@
 				F821A61C1DDDDA8A00785B6D /* JSPatchDemoViewController.m */,
 			);
 			name = "JSPatch实战";
+			sourceTree = "<group>";
+		};
+		F821A6211DDE9DDB00785B6D /* CollectioView(日历)实战 */ = {
+			isa = PBXGroup;
+			children = (
+				F821A6221DDE9DDB00785B6D /* CalenderEvent.h */,
+				F821A6231DDE9DDB00785B6D /* Controller */,
+				F821A6261DDE9DDB00785B6D /* Model */,
+				F821A62B1DDE9DDB00785B6D /* View */,
+			);
+			path = "CollectioView(日历)实战";
+			sourceTree = "<group>";
+		};
+		F821A6231DDE9DDB00785B6D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F821A6241DDE9DDB00785B6D /* WLCollectionViewController.h */,
+				F821A6251DDE9DDB00785B6D /* WLCollectionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F821A6261DDE9DDB00785B6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F821A6271DDE9DDB00785B6D /* CalenderDataSource.h */,
+				F821A6281DDE9DDB00785B6D /* CalenderDataSource.m */,
+				F821A6291DDE9DDB00785B6D /* SampleDayEvent.h */,
+				F821A62A1DDE9DDB00785B6D /* SampleDayEvent.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F821A62B1DDE9DDB00785B6D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F821A62C1DDE9DDB00785B6D /* HeaderView.h */,
+				F821A62D1DDE9DDB00785B6D /* HeaderView.m */,
+				F821A62E1DDE9DDB00785B6D /* WLCollectionViewCell.h */,
+				F821A62F1DDE9DDB00785B6D /* WLCollectionViewCell.m */,
+				F821A6301DDE9DDB00785B6D /* WLCollectionViewLayout.h */,
+				F821A6311DDE9DDB00785B6D /* WLCollectionViewLayout.m */,
+				F821A6321DDE9DDB00785B6D /* WLCollectioView.h */,
+				F821A6331DDE9DDB00785B6D /* WLCollectioView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,10 +464,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F821A6351DDE9DDB00785B6D /* CalenderDataSource.m in Sources */,
+				F821A63A1DDE9DDB00785B6D /* WLCollectioView.m in Sources */,
+				F821A6371DDE9DDB00785B6D /* HeaderView.m in Sources */,
 				F821A5D51DDD5C0C00785B6D /* AppDelegate.m in Sources */,
+				F821A6391DDE9DDB00785B6D /* WLCollectionViewLayout.m in Sources */,
+				F821A6341DDE9DDB00785B6D /* WLCollectionViewController.m in Sources */,
+				F821A6361DDE9DDB00785B6D /* SampleDayEvent.m in Sources */,
 				F821A6101DDDA9EE00785B6D /* GeneralLogViewController.m in Sources */,
 				F821A5D21DDD5C0C00785B6D /* main.m in Sources */,
 				F821A6051DDDA0EC00785B6D /* DemoListViewController.m in Sources */,
+				F821A6381DDE9DDB00785B6D /* WLCollectionViewCell.m in Sources */,
 				F821A6091DDDA85400785B6D /* UniqueString.m in Sources */,
 				F821A61D1DDDDA8A00785B6D /* JSPatchDemoViewController.m in Sources */,
 			);

@@ -10,6 +10,7 @@
 #import "GeneralLogViewController.h"
 #import "UniqueString.h"
 #import "JSPatchDemoViewController.h"
+#import "WLCollectionViewController.h"
 
 @interface DemoListViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -44,7 +45,11 @@
         if (indexPath.row == 0) {
             JSPatchDemoViewController *jspatchVC = [[JSPatchDemoViewController alloc]init];
             [self.navigationController pushViewController:jspatchVC animated:YES];
+        }else if (indexPath.row == 1) {
+            WLCollectionViewController *collectionVC = [[WLCollectionViewController alloc]init];
+            [self.navigationController pushViewController:collectionVC animated:YES];
         }
+
         
     }
     
@@ -124,6 +129,7 @@
         [logSectionArr addObject:@"洗牌算法生成随机数"];
         
         [pushSectionArr addObject:@"JSPatch实战"];
+        [pushSectionArr addObject:@"Collection实战--日历"];
         
         [_dataSourceArray addObject:logSectionArr];
         [_dataSourceArray addObject:pushSectionArr];
