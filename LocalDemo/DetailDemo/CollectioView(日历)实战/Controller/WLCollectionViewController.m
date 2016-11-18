@@ -45,7 +45,7 @@
     dataSource.configureCellBlock = ^(WLCollectionViewCell *cell,NSIndexPath *indexPath,id<CalenderEvent>event){
         cell.cellTextLabel.text = event.title;
         event.selectBlock = ^(){
-            cell.cellTextLabel.text = @"lqc";
+            cell.cellTextLabel.text = @"clicked";
         };
     };
     

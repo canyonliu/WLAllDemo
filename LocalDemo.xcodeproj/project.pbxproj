@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9D5F46A18A7ACEDB9D18A687 /* libPods-LocalDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41361AFB76452961AFFB66E8 /* libPods-LocalDemo.a */; };
+		F815E9921DDEBF3000440340 /* WLUnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9911DDEBF3000440340 /* WLUnlockView.m */; };
 		F821A5D21DDD5C0C00785B6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A5D11DDD5C0C00785B6D /* main.m */; };
 		F821A5D51DDD5C0C00785B6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A5D41DDD5C0C00785B6D /* AppDelegate.m */; };
 		F821A5DB1DDD5C0C00785B6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F821A5D91DDD5C0C00785B6D /* Main.storyboard */; };
@@ -49,6 +50,8 @@
 		408029C9342F6538B4AF7D12 /* Pods-LocalDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocalDemo/Pods-LocalDemo.release.xcconfig"; sourceTree = "<group>"; };
 		41361AFB76452961AFFB66E8 /* libPods-LocalDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocalDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BFCBC1788C2D632F293587D /* Pods-LocalDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocalDemo/Pods-LocalDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F815E9901DDEBF3000440340 /* WLUnlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLUnlockView.h; sourceTree = "<group>"; };
+		F815E9911DDEBF3000440340 /* WLUnlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLUnlockView.m; sourceTree = "<group>"; };
 		F821A5CD1DDD5C0C00785B6D /* LocalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F821A5D11DDD5C0C00785B6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F821A5D31DDD5C0C00785B6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -132,6 +135,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F815E98F1DDEBE9E00440340 /* UnlockView(手势解锁)实战 */ = {
+			isa = PBXGroup;
+			children = (
+				F815E9901DDEBF3000440340 /* WLUnlockView.h */,
+				F815E9911DDEBF3000440340 /* WLUnlockView.m */,
+			);
+			path = "UnlockView(手势解锁)实战";
+			sourceTree = "<group>";
+		};
 		F821A5C41DDD5C0C00785B6D = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +214,7 @@
 		F821A6061DDDA81600785B6D /* DetailDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F815E98F1DDEBE9E00440340 /* UnlockView(手势解锁)实战 */,
 				F821A6211DDE9DDB00785B6D /* CollectioView(日历)实战 */,
 				F821A6151DDDD52200785B6D /* JSPatch实战 */,
 				F821A6071DDDA85400785B6D /* UniqueString.h */,
@@ -467,6 +480,7 @@
 				F821A6351DDE9DDB00785B6D /* CalenderDataSource.m in Sources */,
 				F821A63A1DDE9DDB00785B6D /* WLCollectioView.m in Sources */,
 				F821A6371DDE9DDB00785B6D /* HeaderView.m in Sources */,
+				F815E9921DDEBF3000440340 /* WLUnlockView.m in Sources */,
 				F821A5D51DDD5C0C00785B6D /* AppDelegate.m in Sources */,
 				F821A6391DDE9DDB00785B6D /* WLCollectionViewLayout.m in Sources */,
 				F821A6341DDE9DDB00785B6D /* WLCollectionViewController.m in Sources */,

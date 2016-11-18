@@ -38,6 +38,9 @@
     _durationInHours = durationHour;
     _title = title;
     _startHour = startHour;
+//        _selectBlock = ^(){
+//            NSLog(@"lcccc");
+//        };
     
     }
     return self;
