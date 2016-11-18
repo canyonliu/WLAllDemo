@@ -37,7 +37,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
-            UniqueString *unique = [[UniqueString alloc]init];
+            UniqueString *unique = [[UniqueString alloc]initWithParam:nil];
             [self presentViewController:[self logViewCtrl:nil detailTitle:unique.result]  animated:YES completion:nil];
         }
         

@@ -10,18 +10,12 @@
 
 @implementation UniqueString
 
-- (instancetype)init{
-    if ([super init]) {
-        self.result = [self testForUniqueString];
-    }
-    
-    return self;
-}
-
+#pragma mark 实现父类方法
 /**
  利用洗牌算法生成随机数
  */
-- (NSString *)testForUniqueString{
+
+- (id)makeResult{
     //    NSString *resultString = @"";
     ////    NSMutableDictionary *resultDict = [NSMutableDictionary dictionary];
     //
@@ -48,7 +42,7 @@
     
     
     NSString *resultString = [NSString string];
-//    NSMutableDictionary *resultDict = [NSMutableDictionary dictionary];
+    //    NSMutableDictionary *resultDict = [NSMutableDictionary dictionary];
     
     NSMutableArray *originArray = [[NSMutableArray alloc]initWithObjects:@1,@2,@3,@4,@5,@6,nil];
     NSInteger randomCount = 6;
@@ -64,10 +58,13 @@
     
     resultString = [resultString stringByAppendingString:timeString];
     
-//    [resultDict setObject:resultString forKey:@"rootTag"];
+    //    [resultDict setObject:resultString forKey:@"rootTag"];
     return resultString;
     
+
 }
+
+
 
 
 @end

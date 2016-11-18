@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface UniqueString : NSObject
-@property(nonatomic,strong)NSString *result;
+#import "GeneralBaseLogItem.h"
+@interface UniqueString : GeneralBaseLogItem
 
 @end
