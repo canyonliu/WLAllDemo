@@ -106,8 +106,10 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 //    NSArray *arr = self.dataSourceArray[section];
 //    return arr.count;
-    
-    return [[self.dataSourceArray objectAtIndex:section] count];
+    if(section < 2)
+        return [[self.dataSourceArray objectAtIndex:section] count];
+    else
+        return 0;
 }
 
 
@@ -140,6 +142,7 @@
         [pushSectionArr addObject:@"JSPatch实战"];
         [pushSectionArr addObject:@"Collection实战--日历"];
         [pushSectionArr addObject:@"Unlock手势解锁实战"];
+        [pushSectionArr addObject:@"widget实战(未实现，因为这个需要用到时再好好研究一下  https://github.com/japho/WidgetDemo)"];
         
         [_dataSourceArray addObject:logSectionArr];
         [_dataSourceArray addObject:pushSectionArr];

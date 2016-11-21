@@ -10,6 +10,10 @@
 		9D5F46A18A7ACEDB9D18A687 /* libPods-LocalDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41361AFB76452961AFFB66E8 /* libPods-LocalDemo.a */; };
 		F815E9921DDEBF3000440340 /* WLUnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9911DDEBF3000440340 /* WLUnlockView.m */; };
 		F815E9951DDEC07900440340 /* GeneralBaseLogItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9941DDEC07900440340 /* GeneralBaseLogItem.m */; };
+		F815E99F1DE2D83400440340 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F815E99E1DE2D83400440340 /* NotificationCenter.framework */; };
+		F815E9A31DE2D83400440340 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9A21DE2D83400440340 /* TodayViewController.m */; };
+		F815E9A61DE2D83400440340 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F815E9A41DE2D83400440340 /* MainInterface.storyboard */; };
+		F815E9AA1DE2D83400440340 /* widgetDemo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F815E99D1DE2D83400440340 /* widgetDemo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F821A5D21DDD5C0C00785B6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A5D11DDD5C0C00785B6D /* main.m */; };
 		F821A5D51DDD5C0C00785B6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A5D41DDD5C0C00785B6D /* AppDelegate.m */; };
 		F821A5DB1DDD5C0C00785B6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F821A5D91DDD5C0C00785B6D /* Main.storyboard */; };
@@ -31,6 +35,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F815E9A81DE2D83400440340 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F821A5C51DDD5C0C00785B6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F815E99C1DE2D83400440340;
+			remoteInfo = widgetDemo;
+		};
 		F821A5E71DDD5C0C00785B6D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F821A5C51DDD5C0C00785B6D /* Project object */;
@@ -47,6 +58,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F815E9AE1DE2D83400440340 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F815E9AA1DE2D83400440340 /* widgetDemo.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		408029C9342F6538B4AF7D12 /* Pods-LocalDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocalDemo/Pods-LocalDemo.release.xcconfig"; sourceTree = "<group>"; };
 		41361AFB76452961AFFB66E8 /* libPods-LocalDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocalDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +80,12 @@
 		F815E9911DDEBF3000440340 /* WLUnlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLUnlockView.m; sourceTree = "<group>"; };
 		F815E9931DDEC07900440340 /* GeneralBaseLogItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralBaseLogItem.h; sourceTree = "<group>"; };
 		F815E9941DDEC07900440340 /* GeneralBaseLogItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralBaseLogItem.m; sourceTree = "<group>"; };
+		F815E99D1DE2D83400440340 /* widgetDemo.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widgetDemo.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F815E99E1DE2D83400440340 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		F815E9A11DE2D83400440340 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		F815E9A21DE2D83400440340 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		F815E9A51DE2D83400440340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		F815E9A71DE2D83400440340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F821A5CD1DDD5C0C00785B6D /* LocalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F821A5D11DDD5C0C00785B6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F821A5D31DDD5C0C00785B6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -96,6 +127,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F815E99A1DE2D83400440340 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F815E99F1DE2D83400440340 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F821A5CA1DDD5C0C00785B6D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				41361AFB76452961AFFB66E8 /* libPods-LocalDemo.a */,
+				F815E99E1DE2D83400440340 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,6 +196,25 @@
 			name = "生成唯一字符串";
 			sourceTree = "<group>";
 		};
+		F815E9981DE2D66F00440340 /* WidgetDemo(widget实战) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "WidgetDemo(widget实战)";
+			sourceTree = "<group>";
+		};
+		F815E9A01DE2D83400440340 /* widgetDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F815E9A11DE2D83400440340 /* TodayViewController.h */,
+				F815E9A21DE2D83400440340 /* TodayViewController.m */,
+				F815E9A41DE2D83400440340 /* MainInterface.storyboard */,
+				F815E9A71DE2D83400440340 /* Info.plist */,
+			);
+			name = widgetDemo;
+			path = ../widgetDemo;
+			sourceTree = "<group>";
+		};
 		F821A5C41DDD5C0C00785B6D = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +233,7 @@
 				F821A5CD1DDD5C0C00785B6D /* LocalDemo.app */,
 				F821A5E61DDD5C0C00785B6D /* LocalDemoTests.xctest */,
 				F821A5F11DDD5C0C00785B6D /* LocalDemoUITests.xctest */,
+				F815E99D1DE2D83400440340 /* widgetDemo.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,6 +247,7 @@
 				F821A6031DDDA0EC00785B6D /* DemoListViewController.h */,
 				F821A6041DDDA0EC00785B6D /* DemoListViewController.m */,
 				F821A5E11DDD5C0C00785B6D /* Info.plist */,
+				F815E9A01DE2D83400440340 /* widgetDemo */,
 				F821A60A1DDDA8E200785B6D /* Utils */,
 				F821A6061DDDA81600785B6D /* DetailDemo */,
 				F821A5D01DDD5C0C00785B6D /* Supporting Files */,
@@ -226,6 +287,7 @@
 		F821A6061DDDA81600785B6D /* DetailDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F815E9981DE2D66F00440340 /* WidgetDemo(widget实战) */,
 				F815E9961DDEC38200440340 /* 生成唯一字符串 */,
 				F815E98F1DDEBE9E00440340 /* UnlockView(手势解锁)实战 */,
 				F821A6211DDE9DDB00785B6D /* CollectioView(日历)实战 */,
@@ -303,6 +365,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F815E99C1DE2D83400440340 /* widgetDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F815E9AB1DE2D83400440340 /* Build configuration list for PBXNativeTarget "widgetDemo" */;
+			buildPhases = (
+				F815E9991DE2D83400440340 /* Sources */,
+				F815E99A1DE2D83400440340 /* Frameworks */,
+				F815E99B1DE2D83400440340 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = widgetDemo;
+			productName = widgetDemo;
+			productReference = F815E99D1DE2D83400440340 /* widgetDemo.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		F821A5CC1DDD5C0C00785B6D /* LocalDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F821A5FA1DDD5C0C00785B6D /* Build configuration list for PBXNativeTarget "LocalDemo" */;
@@ -313,10 +392,12 @@
 				F821A5CB1DDD5C0C00785B6D /* Resources */,
 				EBDAF0381E8479A1A26371D1 /* [CP] Embed Pods Frameworks */,
 				78D37CDAF832F8F306BC8B7F /* [CP] Copy Pods Resources */,
+				F815E9AE1DE2D83400440340 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F815E9A91DE2D83400440340 /* PBXTargetDependency */,
 			);
 			name = LocalDemo;
 			productName = LocalDemo;
@@ -368,6 +449,11 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Baidu;
 				TargetAttributes = {
+					F815E99C1DE2D83400440340 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = AL7VT7FHH8;
+						ProvisioningStyle = Automatic;
+					};
 					F821A5CC1DDD5C0C00785B6D = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = AL7VT7FHH8;
@@ -406,11 +492,20 @@
 				F821A5CC1DDD5C0C00785B6D /* LocalDemo */,
 				F821A5E51DDD5C0C00785B6D /* LocalDemoTests */,
 				F821A5F01DDD5C0C00785B6D /* LocalDemoUITests */,
+				F815E99C1DE2D83400440340 /* widgetDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F815E99B1DE2D83400440340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F815E9A61DE2D83400440340 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F821A5CB1DDD5C0C00785B6D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -486,6 +581,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F815E9991DE2D83400440340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F815E9A31DE2D83400440340 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F821A5C91DDD5C0C00785B6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -527,6 +630,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F815E9A91DE2D83400440340 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F815E99C1DE2D83400440340 /* widgetDemo */;
+			targetProxy = F815E9A81DE2D83400440340 /* PBXContainerItemProxy */;
+		};
 		F821A5E81DDD5C0C00785B6D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F821A5CC1DDD5C0C00785B6D /* LocalDemo */;
@@ -540,6 +648,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F815E9A41DE2D83400440340 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F815E9A51DE2D83400440340 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		F821A5D91DDD5C0C00785B6D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -559,6 +675,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F815E9AC1DE2D83400440340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = AL7VT7FHH8;
+				INFOPLIST_FILE = widgetDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Baidu.LocalDemo.widgetDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F815E9AD1DE2D83400440340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = AL7VT7FHH8;
+				INFOPLIST_FILE = widgetDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Baidu.LocalDemo.widgetDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		F821A5F81DDD5C0C00785B6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -724,6 +864,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F815E9AB1DE2D83400440340 /* Build configuration list for PBXNativeTarget "widgetDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F815E9AC1DE2D83400440340 /* Debug */,
+				F815E9AD1DE2D83400440340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F821A5C81DDD5C0C00785B6D /* Build configuration list for PBXProject "LocalDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
