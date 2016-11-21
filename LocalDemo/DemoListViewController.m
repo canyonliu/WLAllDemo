@@ -12,6 +12,7 @@
 #import "JSPatchDemoViewController.h"
 #import "WLCollectionViewController.h"
 #import "WLUnlockView.h"
+#import "MethodSwizzleViewController.h"
 
 @interface DemoListViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -57,6 +58,9 @@
             [containerVC.view addSubview: bgView];
             [containerVC.view addSubview: unlock];
             [self.navigationController pushViewController:containerVC animated:YES];
+        }else if (indexPath.row == 3){
+            MethodSwizzleViewController *swizzleVC = [[MethodSwizzleViewController alloc]init];
+            [self.navigationController pushViewController:swizzleVC animated:YES];
         }
 
         
@@ -132,15 +136,23 @@
 - (NSMutableArray *)dataSourceArray{
     if (!_dataSourceArray) {
         _dataSourceArray = [[NSMutableArray alloc]init];
-        NSMutableArray *logSectionArr = [[NSMutableArray alloc]init];
-        NSMutableArray *pushSectionArr = [[NSMutableArray alloc]init];
+        NSMutableArray *logSectionArr = [[NSMutableArray alloc]initWithObjects:
+                                         @"洗牌算法生成随机数",
+                                         nil];
         
-        [logSectionArr addObject:@"洗牌算法生成随机数"];
+        NSMutableArray *pushSectionArr = [[NSMutableArray alloc]initWithObjects:
+                                          @"JSPatch实战",
+                                          @"Collection实战--日历",
+                                          @"Unlock手势解锁实战",
+                                          @"MethodSwizzing黑魔法实战",
+                                          nil];
         
-        [pushSectionArr addObject:@"JSPatch实战"];
-        [pushSectionArr addObject:@"Collection实战--日历"];
-        [pushSectionArr addObject:@"Unlock手势解锁实战"];
+//        [logSectionArr addObject:@"洗牌算法生成随机数"];
         
+//        [pushSectionArr addObject:@"JSPatch实战"];
+//        [pushSectionArr addObject:@"Collection实战--日历"];
+//        [pushSectionArr addObject:@"Unlock手势解锁实战"];
+//        [pushSectionArr addObject:@"MethodSwizzing黑魔法实战"];
         [_dataSourceArray addObject:logSectionArr];
         [_dataSourceArray addObject:pushSectionArr];
     }

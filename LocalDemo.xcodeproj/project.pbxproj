@@ -10,6 +10,9 @@
 		9D5F46A18A7ACEDB9D18A687 /* libPods-LocalDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41361AFB76452961AFFB66E8 /* libPods-LocalDemo.a */; };
 		F815E9921DDEBF3000440340 /* WLUnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9911DDEBF3000440340 /* WLUnlockView.m */; };
 		F815E9951DDEC07900440340 /* GeneralBaseLogItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9941DDEC07900440340 /* GeneralBaseLogItem.m */; };
+		F815E9B51DE306FC00440340 /* UIViewController+WLStatisticalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9B41DE306FC00440340 /* UIViewController+WLStatisticalViewController.m */; };
+		F815E9B81DE30BBB00440340 /* MethodSwizzleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9B71DE30BBB00440340 /* MethodSwizzleViewController.m */; };
+		F815E9BB1DE3177500440340 /* NSArray+WLSafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9BA1DE3177500440340 /* NSArray+WLSafeArray.m */; };
 		F821A5D21DDD5C0C00785B6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A5D11DDD5C0C00785B6D /* main.m */; };
 		F821A5D51DDD5C0C00785B6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A5D41DDD5C0C00785B6D /* AppDelegate.m */; };
 		F821A5DB1DDD5C0C00785B6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F821A5D91DDD5C0C00785B6D /* Main.storyboard */; };
@@ -55,6 +58,12 @@
 		F815E9911DDEBF3000440340 /* WLUnlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLUnlockView.m; sourceTree = "<group>"; };
 		F815E9931DDEC07900440340 /* GeneralBaseLogItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralBaseLogItem.h; sourceTree = "<group>"; };
 		F815E9941DDEC07900440340 /* GeneralBaseLogItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralBaseLogItem.m; sourceTree = "<group>"; };
+		F815E9B31DE306FC00440340 /* UIViewController+WLStatisticalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WLStatisticalViewController.h"; sourceTree = "<group>"; };
+		F815E9B41DE306FC00440340 /* UIViewController+WLStatisticalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WLStatisticalViewController.m"; sourceTree = "<group>"; };
+		F815E9B61DE30BBB00440340 /* MethodSwizzleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzleViewController.h; sourceTree = "<group>"; };
+		F815E9B71DE30BBB00440340 /* MethodSwizzleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzleViewController.m; sourceTree = "<group>"; };
+		F815E9B91DE3177500440340 /* NSArray+WLSafeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+WLSafeArray.h"; sourceTree = "<group>"; };
+		F815E9BA1DE3177500440340 /* NSArray+WLSafeArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WLSafeArray.m"; sourceTree = "<group>"; };
 		F821A5CD1DDD5C0C00785B6D /* LocalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F821A5D11DDD5C0C00785B6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F821A5D31DDD5C0C00785B6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,6 +165,19 @@
 			name = "生成唯一字符串";
 			sourceTree = "<group>";
 		};
+		F815E9AF1DE3063700440340 /* MethodSwizzing实战 */ = {
+			isa = PBXGroup;
+			children = (
+				F815E9B31DE306FC00440340 /* UIViewController+WLStatisticalViewController.h */,
+				F815E9B41DE306FC00440340 /* UIViewController+WLStatisticalViewController.m */,
+				F815E9B61DE30BBB00440340 /* MethodSwizzleViewController.h */,
+				F815E9B71DE30BBB00440340 /* MethodSwizzleViewController.m */,
+				F815E9B91DE3177500440340 /* NSArray+WLSafeArray.h */,
+				F815E9BA1DE3177500440340 /* NSArray+WLSafeArray.m */,
+			);
+			path = "MethodSwizzing实战";
+			sourceTree = "<group>";
+		};
 		F821A5C41DDD5C0C00785B6D = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +248,7 @@
 		F821A6061DDDA81600785B6D /* DetailDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F815E9AF1DE3063700440340 /* MethodSwizzing实战 */,
 				F815E9961DDEC38200440340 /* 生成唯一字符串 */,
 				F815E98F1DDEBE9E00440340 /* UnlockView(手势解锁)实战 */,
 				F821A6211DDE9DDB00785B6D /* CollectioView(日历)实战 */,
@@ -498,8 +521,11 @@
 				F821A5D51DDD5C0C00785B6D /* AppDelegate.m in Sources */,
 				F821A6391DDE9DDB00785B6D /* WLCollectionViewLayout.m in Sources */,
 				F821A6341DDE9DDB00785B6D /* WLCollectionViewController.m in Sources */,
+				F815E9B81DE30BBB00440340 /* MethodSwizzleViewController.m in Sources */,
+				F815E9B51DE306FC00440340 /* UIViewController+WLStatisticalViewController.m in Sources */,
 				F821A6361DDE9DDB00785B6D /* SampleDayEvent.m in Sources */,
 				F821A6101DDDA9EE00785B6D /* GeneralLogViewController.m in Sources */,
+				F815E9BB1DE3177500440340 /* NSArray+WLSafeArray.m in Sources */,
 				F821A5D21DDD5C0C00785B6D /* main.m in Sources */,
 				F821A6051DDDA0EC00785B6D /* DemoListViewController.m in Sources */,
 				F821A6381DDE9DDB00785B6D /* WLCollectionViewCell.m in Sources */,
