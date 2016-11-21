@@ -11,6 +11,7 @@
 #import "UniqueString.h"
 #import "JSPatchDemoViewController.h"
 #import "WLCollectionViewController.h"
+#import "WLUnlockView.h"
 
 @interface DemoListViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -48,6 +49,14 @@
         }else if (indexPath.row == 1) {
             WLCollectionViewController *collectionVC = [[WLCollectionViewController alloc]init];
             [self.navigationController pushViewController:collectionVC animated:YES];
+        }else if (indexPath.row == 2){
+            WLUnlockView *unlock = [[WLUnlockView alloc]initWithFrame:CGRectMake(20, 100, self.view.bounds.size.width - 40, self.view.bounds.size.height - 100)];
+            UIViewController *containerVC = [[UIViewController alloc]init];
+            UIImageView *bgView = [[UIImageView alloc]initWithFrame:self.view.bounds];
+            [bgView setImage:[UIImage imageNamed:@"Home_refresh_bg"]];
+            [containerVC.view addSubview: bgView];
+            [containerVC.view addSubview: unlock];
+            [self.navigationController pushViewController:containerVC animated:YES];
         }
 
         
@@ -130,6 +139,7 @@
         
         [pushSectionArr addObject:@"JSPatch实战"];
         [pushSectionArr addObject:@"Collection实战--日历"];
+        [pushSectionArr addObject:@"Unlock手势解锁实战"];
         
         [_dataSourceArray addObject:logSectionArr];
         [_dataSourceArray addObject:pushSectionArr];
