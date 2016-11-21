@@ -199,6 +199,7 @@
 		F815E9981DE2D66F00440340 /* WidgetDemo(widget实战) */ = {
 			isa = PBXGroup;
 			children = (
+				F815E9A01DE2D83400440340 /* widgetDemo */,
 			);
 			path = "WidgetDemo(widget实战)";
 			sourceTree = "<group>";
@@ -212,7 +213,7 @@
 				F815E9A71DE2D83400440340 /* Info.plist */,
 			);
 			name = widgetDemo;
-			path = ../widgetDemo;
+			path = ../../../widgetDemo;
 			sourceTree = "<group>";
 		};
 		F821A5C41DDD5C0C00785B6D = {
@@ -247,7 +248,6 @@
 				F821A6031DDDA0EC00785B6D /* DemoListViewController.h */,
 				F821A6041DDDA0EC00785B6D /* DemoListViewController.m */,
 				F821A5E11DDD5C0C00785B6D /* Info.plist */,
-				F815E9A01DE2D83400440340 /* widgetDemo */,
 				F821A60A1DDDA8E200785B6D /* Utils */,
 				F821A6061DDDA81600785B6D /* DetailDemo */,
 				F821A5D01DDD5C0C00785B6D /* Supporting Files */,
@@ -871,6 +871,7 @@
 				F815E9AD1DE2D83400440340 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F821A5C81DDD5C0C00785B6D /* Build configuration list for PBXProject "LocalDemo" */ = {
 			isa = XCConfigurationList;
