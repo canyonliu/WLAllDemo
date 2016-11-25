@@ -13,6 +13,21 @@
 		F815E9B51DE306FC00440340 /* UIViewController+WLStatisticalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9B41DE306FC00440340 /* UIViewController+WLStatisticalViewController.m */; };
 		F815E9B81DE30BBB00440340 /* MethodSwizzleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9B71DE30BBB00440340 /* MethodSwizzleViewController.m */; };
 		F815E9BB1DE3177500440340 /* NSArray+WLSafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9BA1DE3177500440340 /* NSArray+WLSafeArray.m */; };
+		F815E9C01DE3EB3000440340 /* SegmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9BF1DE3EB3000440340 /* SegmentedViewController.m */; };
+		F815E9CE1DE3F01A00440340 /* StyleFiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9CA1DE3F01A00440340 /* StyleFiveVC.m */; };
+		F815E9CF1DE3F01A00440340 /* StyleNineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9CC1DE3F01A00440340 /* StyleNineVC.m */; };
+		F815E9E21DE3F04300440340 /* TestEightVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9D11DE3F04300440340 /* TestEightVC.m */; };
+		F815E9E31DE3F04300440340 /* TestFiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9D31DE3F04300440340 /* TestFiveVC.m */; };
+		F815E9E41DE3F04300440340 /* TestFourVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9D51DE3F04300440340 /* TestFourVC.m */; };
+		F815E9E51DE3F04300440340 /* TestNineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9D71DE3F04300440340 /* TestNineVC.m */; };
+		F815E9E61DE3F04300440340 /* TestOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9D91DE3F04300440340 /* TestOneVC.m */; };
+		F815E9E71DE3F04300440340 /* TestSevenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9DB1DE3F04300440340 /* TestSevenVC.m */; };
+		F815E9E81DE3F04300440340 /* TestSixVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9DD1DE3F04300440340 /* TestSixVC.m */; };
+		F815E9E91DE3F04300440340 /* TestThreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9DF1DE3F04300440340 /* TestThreeVC.m */; };
+		F815E9EA1DE3F04300440340 /* TestTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9E11DE3F04300440340 /* TestTwoVC.m */; };
+		F815E9ED1DE3F2D900440340 /* SegmentedControlDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9EC1DE3F2D900440340 /* SegmentedControlDefault.m */; };
+		F815E9F01DE3F3C600440340 /* UIView+WLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9EF1DE3F3C600440340 /* UIView+WLExtension.m */; };
+		F815EA011DE43B3A00440340 /* SegmentedControlBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = F815EA001DE43B3A00440340 /* SegmentedControlBottomView.m */; };
 		F821A5D21DDD5C0C00785B6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A5D11DDD5C0C00785B6D /* main.m */; };
 		F821A5D51DDD5C0C00785B6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A5D41DDD5C0C00785B6D /* AppDelegate.m */; };
 		F821A5DB1DDD5C0C00785B6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F821A5D91DDD5C0C00785B6D /* Main.storyboard */; };
@@ -31,6 +46,7 @@
 		F821A6381DDE9DDB00785B6D /* WLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A62F1DDE9DDB00785B6D /* WLCollectionViewCell.m */; };
 		F821A6391DDE9DDB00785B6D /* WLCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A6311DDE9DDB00785B6D /* WLCollectionViewLayout.m */; };
 		F821A63A1DDE9DDB00785B6D /* WLCollectioView.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A6331DDE9DDB00785B6D /* WLCollectioView.m */; };
+		F842346F1DE70B0C003F5315 /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F842346E1DE70B0C003F5315 /* UIWindow+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +80,36 @@
 		F815E9B71DE30BBB00440340 /* MethodSwizzleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzleViewController.m; sourceTree = "<group>"; };
 		F815E9B91DE3177500440340 /* NSArray+WLSafeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+WLSafeArray.h"; sourceTree = "<group>"; };
 		F815E9BA1DE3177500440340 /* NSArray+WLSafeArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WLSafeArray.m"; sourceTree = "<group>"; };
+		F815E9BE1DE3EB3000440340 /* SegmentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedViewController.h; sourceTree = "<group>"; };
+		F815E9BF1DE3EB3000440340 /* SegmentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedViewController.m; sourceTree = "<group>"; };
+		F815E9C91DE3F01A00440340 /* StyleFiveVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleFiveVC.h; sourceTree = "<group>"; };
+		F815E9CA1DE3F01A00440340 /* StyleFiveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleFiveVC.m; sourceTree = "<group>"; };
+		F815E9CB1DE3F01A00440340 /* StyleNineVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleNineVC.h; sourceTree = "<group>"; };
+		F815E9CC1DE3F01A00440340 /* StyleNineVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleNineVC.m; sourceTree = "<group>"; };
+		F815E9D01DE3F04300440340 /* TestEightVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestEightVC.h; sourceTree = "<group>"; };
+		F815E9D11DE3F04300440340 /* TestEightVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestEightVC.m; sourceTree = "<group>"; };
+		F815E9D21DE3F04300440340 /* TestFiveVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFiveVC.h; sourceTree = "<group>"; };
+		F815E9D31DE3F04300440340 /* TestFiveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFiveVC.m; sourceTree = "<group>"; };
+		F815E9D41DE3F04300440340 /* TestFourVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFourVC.h; sourceTree = "<group>"; };
+		F815E9D51DE3F04300440340 /* TestFourVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFourVC.m; sourceTree = "<group>"; };
+		F815E9D61DE3F04300440340 /* TestNineVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNineVC.h; sourceTree = "<group>"; };
+		F815E9D71DE3F04300440340 /* TestNineVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNineVC.m; sourceTree = "<group>"; };
+		F815E9D81DE3F04300440340 /* TestOneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOneVC.h; sourceTree = "<group>"; };
+		F815E9D91DE3F04300440340 /* TestOneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOneVC.m; sourceTree = "<group>"; };
+		F815E9DA1DE3F04300440340 /* TestSevenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSevenVC.h; sourceTree = "<group>"; };
+		F815E9DB1DE3F04300440340 /* TestSevenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSevenVC.m; sourceTree = "<group>"; };
+		F815E9DC1DE3F04300440340 /* TestSixVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSixVC.h; sourceTree = "<group>"; };
+		F815E9DD1DE3F04300440340 /* TestSixVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSixVC.m; sourceTree = "<group>"; };
+		F815E9DE1DE3F04300440340 /* TestThreeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestThreeVC.h; sourceTree = "<group>"; };
+		F815E9DF1DE3F04300440340 /* TestThreeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestThreeVC.m; sourceTree = "<group>"; };
+		F815E9E01DE3F04300440340 /* TestTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTwoVC.h; sourceTree = "<group>"; };
+		F815E9E11DE3F04300440340 /* TestTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTwoVC.m; sourceTree = "<group>"; };
+		F815E9EB1DE3F2D900440340 /* SegmentedControlDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedControlDefault.h; sourceTree = "<group>"; };
+		F815E9EC1DE3F2D900440340 /* SegmentedControlDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedControlDefault.m; sourceTree = "<group>"; };
+		F815E9EE1DE3F3C600440340 /* UIView+WLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WLExtension.h"; sourceTree = "<group>"; };
+		F815E9EF1DE3F3C600440340 /* UIView+WLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WLExtension.m"; sourceTree = "<group>"; };
+		F815E9FF1DE43B3A00440340 /* SegmentedControlBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedControlBottomView.h; sourceTree = "<group>"; };
+		F815EA001DE43B3A00440340 /* SegmentedControlBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedControlBottomView.m; sourceTree = "<group>"; };
 		F821A5CD1DDD5C0C00785B6D /* LocalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F821A5D11DDD5C0C00785B6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F821A5D31DDD5C0C00785B6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -102,6 +148,8 @@
 		F821A6311DDE9DDB00785B6D /* WLCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectionViewLayout.m; sourceTree = "<group>"; };
 		F821A6321DDE9DDB00785B6D /* WLCollectioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCollectioView.h; sourceTree = "<group>"; };
 		F821A6331DDE9DDB00785B6D /* WLCollectioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectioView.m; sourceTree = "<group>"; };
+		F842346D1DE70B0C003F5315 /* UIWindow+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Extension.h"; sourceTree = "<group>"; };
+		F842346E1DE70B0C003F5315 /* UIWindow+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +226,65 @@
 			path = "MethodSwizzing实战";
 			sourceTree = "<group>";
 		};
+		F815E9BC1DE3EAD700440340 /* SegmentedControl实战 */ = {
+			isa = PBXGroup;
+			children = (
+				F815E9C81DE3F01A00440340 /* CellVC */,
+				F815E9CD1DE3F01A00440340 /* ChildVC */,
+				F815E9BD1DE3EB0800440340 /* control */,
+				F815E9BE1DE3EB3000440340 /* SegmentedViewController.h */,
+				F815E9BF1DE3EB3000440340 /* SegmentedViewController.m */,
+			);
+			path = "SegmentedControl实战";
+			sourceTree = "<group>";
+		};
+		F815E9BD1DE3EB0800440340 /* control */ = {
+			isa = PBXGroup;
+			children = (
+				F815E9EB1DE3F2D900440340 /* SegmentedControlDefault.h */,
+				F815E9EC1DE3F2D900440340 /* SegmentedControlDefault.m */,
+				F815E9FF1DE43B3A00440340 /* SegmentedControlBottomView.h */,
+				F815EA001DE43B3A00440340 /* SegmentedControlBottomView.m */,
+			);
+			path = control;
+			sourceTree = "<group>";
+		};
+		F815E9C81DE3F01A00440340 /* CellVC */ = {
+			isa = PBXGroup;
+			children = (
+				F815E9C91DE3F01A00440340 /* StyleFiveVC.h */,
+				F815E9CA1DE3F01A00440340 /* StyleFiveVC.m */,
+				F815E9CB1DE3F01A00440340 /* StyleNineVC.h */,
+				F815E9CC1DE3F01A00440340 /* StyleNineVC.m */,
+			);
+			path = CellVC;
+			sourceTree = "<group>";
+		};
+		F815E9CD1DE3F01A00440340 /* ChildVC */ = {
+			isa = PBXGroup;
+			children = (
+				F815E9D01DE3F04300440340 /* TestEightVC.h */,
+				F815E9D11DE3F04300440340 /* TestEightVC.m */,
+				F815E9D21DE3F04300440340 /* TestFiveVC.h */,
+				F815E9D31DE3F04300440340 /* TestFiveVC.m */,
+				F815E9D41DE3F04300440340 /* TestFourVC.h */,
+				F815E9D51DE3F04300440340 /* TestFourVC.m */,
+				F815E9D61DE3F04300440340 /* TestNineVC.h */,
+				F815E9D71DE3F04300440340 /* TestNineVC.m */,
+				F815E9D81DE3F04300440340 /* TestOneVC.h */,
+				F815E9D91DE3F04300440340 /* TestOneVC.m */,
+				F815E9DA1DE3F04300440340 /* TestSevenVC.h */,
+				F815E9DB1DE3F04300440340 /* TestSevenVC.m */,
+				F815E9DC1DE3F04300440340 /* TestSixVC.h */,
+				F815E9DD1DE3F04300440340 /* TestSixVC.m */,
+				F815E9DE1DE3F04300440340 /* TestThreeVC.h */,
+				F815E9DF1DE3F04300440340 /* TestThreeVC.m */,
+				F815E9E01DE3F04300440340 /* TestTwoVC.h */,
+				F815E9E11DE3F04300440340 /* TestTwoVC.m */,
+			);
+			path = ChildVC;
+			sourceTree = "<group>";
+		};
 		F821A5C41DDD5C0C00785B6D = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +355,9 @@
 		F821A6061DDDA81600785B6D /* DetailDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F84234711DE7DBC2003F5315 /* KVO实战 */,
+				F842346C1DE70AED003F5315 /* CurTopViewController(获得当前可见的VC) */,
+				F815E9BC1DE3EAD700440340 /* SegmentedControl实战 */,
 				F815E9AF1DE3063700440340 /* MethodSwizzing实战 */,
 				F815E9961DDEC38200440340 /* 生成唯一字符串 */,
 				F815E98F1DDEBE9E00440340 /* UnlockView(手势解锁)实战 */,
@@ -260,10 +370,13 @@
 		F821A60A1DDDA8E200785B6D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F84234701DE7DB1D003F5315 /* KVO实战 */,
 				F821A60E1DDDA9EE00785B6D /* GeneralLogViewController.h */,
 				F821A60F1DDDA9EE00785B6D /* GeneralLogViewController.m */,
 				F815E9931DDEC07900440340 /* GeneralBaseLogItem.h */,
 				F815E9941DDEC07900440340 /* GeneralBaseLogItem.m */,
+				F815E9EE1DE3F3C600440340 /* UIView+WLExtension.h */,
+				F815E9EF1DE3F3C600440340 /* UIView+WLExtension.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -321,6 +434,29 @@
 				F821A6331DDE9DDB00785B6D /* WLCollectioView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F842346C1DE70AED003F5315 /* CurTopViewController(获得当前可见的VC) */ = {
+			isa = PBXGroup;
+			children = (
+				F842346D1DE70B0C003F5315 /* UIWindow+Extension.h */,
+				F842346E1DE70B0C003F5315 /* UIWindow+Extension.m */,
+			);
+			path = "CurTopViewController(获得当前可见的VC)";
+			sourceTree = "<group>";
+		};
+		F84234701DE7DB1D003F5315 /* KVO实战 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "KVO实战";
+			sourceTree = "<group>";
+		};
+		F84234711DE7DBC2003F5315 /* KVO实战 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "KVO实战";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,23 +650,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				F821A6351DDE9DDB00785B6D /* CalenderDataSource.m in Sources */,
+				F815E9E31DE3F04300440340 /* TestFiveVC.m in Sources */,
+				F815E9C01DE3EB3000440340 /* SegmentedViewController.m in Sources */,
 				F821A63A1DDE9DDB00785B6D /* WLCollectioView.m in Sources */,
 				F821A6371DDE9DDB00785B6D /* HeaderView.m in Sources */,
+				F815E9E21DE3F04300440340 /* TestEightVC.m in Sources */,
 				F815E9921DDEBF3000440340 /* WLUnlockView.m in Sources */,
+				F815E9E81DE3F04300440340 /* TestSixVC.m in Sources */,
+				F815E9ED1DE3F2D900440340 /* SegmentedControlDefault.m in Sources */,
+				F815E9E61DE3F04300440340 /* TestOneVC.m in Sources */,
 				F815E9951DDEC07900440340 /* GeneralBaseLogItem.m in Sources */,
+				F842346F1DE70B0C003F5315 /* UIWindow+Extension.m in Sources */,
 				F821A5D51DDD5C0C00785B6D /* AppDelegate.m in Sources */,
 				F821A6391DDE9DDB00785B6D /* WLCollectionViewLayout.m in Sources */,
 				F821A6341DDE9DDB00785B6D /* WLCollectionViewController.m in Sources */,
+				F815EA011DE43B3A00440340 /* SegmentedControlBottomView.m in Sources */,
 				F815E9B81DE30BBB00440340 /* MethodSwizzleViewController.m in Sources */,
+				F815E9E41DE3F04300440340 /* TestFourVC.m in Sources */,
+				F815E9E91DE3F04300440340 /* TestThreeVC.m in Sources */,
 				F815E9B51DE306FC00440340 /* UIViewController+WLStatisticalViewController.m in Sources */,
+				F815E9CF1DE3F01A00440340 /* StyleNineVC.m in Sources */,
+				F815E9F01DE3F3C600440340 /* UIView+WLExtension.m in Sources */,
 				F821A6361DDE9DDB00785B6D /* SampleDayEvent.m in Sources */,
+				F815E9CE1DE3F01A00440340 /* StyleFiveVC.m in Sources */,
 				F821A6101DDDA9EE00785B6D /* GeneralLogViewController.m in Sources */,
 				F815E9BB1DE3177500440340 /* NSArray+WLSafeArray.m in Sources */,
 				F821A5D21DDD5C0C00785B6D /* main.m in Sources */,
 				F821A6051DDDA0EC00785B6D /* DemoListViewController.m in Sources */,
 				F821A6381DDE9DDB00785B6D /* WLCollectionViewCell.m in Sources */,
+				F815E9E51DE3F04300440340 /* TestNineVC.m in Sources */,
 				F821A6091DDDA85400785B6D /* UniqueString.m in Sources */,
 				F821A61D1DDDDA8A00785B6D /* JSPatchDemoViewController.m in Sources */,
+				F815E9E71DE3F04300440340 /* TestSevenVC.m in Sources */,
+				F815E9EA1DE3F04300440340 /* TestTwoVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

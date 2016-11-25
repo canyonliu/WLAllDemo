@@ -13,6 +13,11 @@
 #import "WLCollectionViewController.h"
 #import "WLUnlockView.h"
 #import "MethodSwizzleViewController.h"
+#import "SegmentedViewController.h"
+#import "UIWindow+Extension.h"
+
+
+
 
 @interface DemoListViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -41,6 +46,14 @@
         if (indexPath.row == 0) {
             UniqueString *unique = [[UniqueString alloc]initWithParam:nil];
             [self presentViewController:[self logViewCtrl:nil detailTitle:unique.result]  animated:YES completion:nil];
+        }else if (indexPath.row == 1){
+           NSDictionary* dict =  (NSDictionary *)[[UIApplication sharedApplication].keyWindow currentTopViewController];
+            [self presentViewController:
+                                    [self logViewCtrl:nil detailTitle:
+                                    dict.description]
+                                    animated:YES completion:nil];
+        }else if (indexPath.row == 2){
+            
         }
         
     }else{
@@ -61,6 +74,9 @@
         }else if (indexPath.row == 3){
             MethodSwizzleViewController *swizzleVC = [[MethodSwizzleViewController alloc]init];
             [self.navigationController pushViewController:swizzleVC animated:YES];
+        }else if (indexPath.row == 4){
+            SegmentedViewController *segmentVC = [[SegmentedViewController alloc]init];
+            [self.navigationController pushViewController:segmentVC animated:YES];
         }
 
         
@@ -138,6 +154,8 @@
         _dataSourceArray = [[NSMutableArray alloc]init];
         NSMutableArray *logSectionArr = [[NSMutableArray alloc]initWithObjects:
                                          @"洗牌算法生成随机数",
+                                         @"UIWindow的category",
+                                         @"KVO实战",
                                          nil];
         
         NSMutableArray *pushSectionArr = [[NSMutableArray alloc]initWithObjects:
@@ -145,6 +163,7 @@
                                           @"Collection实战--日历",
                                           @"Unlock手势解锁实战",
                                           @"MethodSwizzing黑魔法实战",
+                                          @"SegmentedControl实战",
                                           nil];
         
 //        [logSectionArr addObject:@"洗牌算法生成随机数"];
@@ -165,6 +184,13 @@
         _logVC = [GeneralLogViewController initWithTitle:title detailTitle:detailTitle];
     }
     return _logVC;
+}
+
+
+
+#pragma mark UIScrollViewDelegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    NSLog(@"当前的offset:%.f",self.mainTableView.contentOffset.y);
 }
 
 @end
