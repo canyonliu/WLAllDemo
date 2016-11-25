@@ -15,6 +15,7 @@
 #import "MethodSwizzleViewController.h"
 #import "SegmentedViewController.h"
 #import "UIWindow+Extension.h"
+#import "KVOModel.h"
 
 
 
@@ -26,9 +27,17 @@
 @property (nonatomic,strong)NSMutableArray *dataSourceArray;
 
 @property (nonatomic,strong)GeneralLogViewController *logVC;
+
+@property (nonatomic,strong)KVOModel *kvoModel;
+
 @end
 
 @implementation DemoListViewController
+{
+//    @private
+    NSString *kvoShowItem;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -53,6 +62,12 @@
                                     dict.description]
                                     animated:YES completion:nil];
         }else if (indexPath.row == 2){
+            //观察KVO
+            [self addObserverForMyself];
+            //设置block
+            [self observerBlock];
+
+            [self presentViewController:[self logViewCtrl:self.dataSourceArray[indexPath.section][indexPath.row] detailTitle:self.kvoModel.name]  animated:YES completion:nil];
             
         }
         
@@ -131,6 +146,41 @@
 }
 
 
+#pragma mark 观察KVO
+- (void)addObserverForMyself{
+    self.kvoModel = [[KVOModel alloc]initWithParam:nil];
+    [self.kvoModel addObserver:self
+           forKeyPath:@"name"
+              options:NSKeyValueObservingOptionNew
+              context:nil];
+
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
+    id oldValue = [change objectForKey:NSKeyValueChangeOldKey];
+    id newValue = [change objectForKey:NSKeyValueChangeNewKey];
+    [self.logVC setMessage:newValue];
+
+    NSLog(@"old == %@",oldValue);
+    NSLog(@"new == %@",newValue);
+    //当界面快要消失的时候，一定要记得移除KVO，这里用的地方不正确
+    [self.kvoModel removeObserver:self forKeyPath:@"name"];
+
+}
+
+#pragma mark 设置block
+- (void)observerBlock{
+    __weak typeof(self) wself = self;
+    self.kvoModel.kvoBlcok = ^ NSString * (NSString *name){
+        //                __strong typeof(wself) sself = wself;
+        //下列方法说明了合理使用setter方法是可以不刷新的情况下改变界面上的元素的
+        [wself.logVC setMessage:name];
+        return @"晕不晕";
+        
+    };
+    
+}
+
 
 #pragma  mark getter
 - (UITableView *)mainTableView{
@@ -166,12 +216,7 @@
                                           @"SegmentedControl实战",
                                           nil];
         
-//        [logSectionArr addObject:@"洗牌算法生成随机数"];
-        
-//        [pushSectionArr addObject:@"JSPatch实战"];
-//        [pushSectionArr addObject:@"Collection实战--日历"];
-//        [pushSectionArr addObject:@"Unlock手势解锁实战"];
-//        [pushSectionArr addObject:@"MethodSwizzing黑魔法实战"];
+
         [_dataSourceArray addObject:logSectionArr];
         [_dataSourceArray addObject:pushSectionArr];
     }
@@ -180,9 +225,10 @@
 
 
 - (GeneralLogViewController *)logViewCtrl:(NSString *)title detailTitle:(NSString *)detailTitle{
-    if (!_logVC) {
+//    if (!_logVC) {
         _logVC = [GeneralLogViewController initWithTitle:title detailTitle:detailTitle];
-    }
+        
+//    }
     return _logVC;
 }
 
@@ -192,5 +238,7 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     NSLog(@"当前的offset:%.f",self.mainTableView.contentOffset.y);
 }
+
+
 
 @end

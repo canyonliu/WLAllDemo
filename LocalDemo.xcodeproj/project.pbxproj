@@ -47,6 +47,7 @@
 		F821A6391DDE9DDB00785B6D /* WLCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A6311DDE9DDB00785B6D /* WLCollectionViewLayout.m */; };
 		F821A63A1DDE9DDB00785B6D /* WLCollectioView.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A6331DDE9DDB00785B6D /* WLCollectioView.m */; };
 		F842346F1DE70B0C003F5315 /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F842346E1DE70B0C003F5315 /* UIWindow+Extension.m */; };
+		F84234741DE7DCEC003F5315 /* KVOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F84234731DE7DCEC003F5315 /* KVOModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +151,8 @@
 		F821A6331DDE9DDB00785B6D /* WLCollectioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectioView.m; sourceTree = "<group>"; };
 		F842346D1DE70B0C003F5315 /* UIWindow+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Extension.h"; sourceTree = "<group>"; };
 		F842346E1DE70B0C003F5315 /* UIWindow+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Extension.m"; sourceTree = "<group>"; };
+		F84234721DE7DCEC003F5315 /* KVOModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOModel.h; sourceTree = "<group>"; };
+		F84234731DE7DCEC003F5315 /* KVOModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,7 +358,7 @@
 		F821A6061DDDA81600785B6D /* DetailDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F84234711DE7DBC2003F5315 /* KVO实战 */,
+				F84234711DE7DBC2003F5315 /* KVO和block的实战 */,
 				F842346C1DE70AED003F5315 /* CurTopViewController(获得当前可见的VC) */,
 				F815E9BC1DE3EAD700440340 /* SegmentedControl实战 */,
 				F815E9AF1DE3063700440340 /* MethodSwizzing实战 */,
@@ -370,7 +373,6 @@
 		F821A60A1DDDA8E200785B6D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				F84234701DE7DB1D003F5315 /* KVO实战 */,
 				F821A60E1DDDA9EE00785B6D /* GeneralLogViewController.h */,
 				F821A60F1DDDA9EE00785B6D /* GeneralLogViewController.m */,
 				F815E9931DDEC07900440340 /* GeneralBaseLogItem.h */,
@@ -445,17 +447,13 @@
 			path = "CurTopViewController(获得当前可见的VC)";
 			sourceTree = "<group>";
 		};
-		F84234701DE7DB1D003F5315 /* KVO实战 */ = {
+		F84234711DE7DBC2003F5315 /* KVO和block的实战 */ = {
 			isa = PBXGroup;
 			children = (
+				F84234721DE7DCEC003F5315 /* KVOModel.h */,
+				F84234731DE7DCEC003F5315 /* KVOModel.m */,
 			);
-			path = "KVO实战";
-			sourceTree = "<group>";
-		};
-		F84234711DE7DBC2003F5315 /* KVO实战 */ = {
-			isa = PBXGroup;
-			children = (
-			);
+			name = "KVO和block的实战";
 			path = "KVO实战";
 			sourceTree = "<group>";
 		};
@@ -656,6 +654,7 @@
 				F821A6371DDE9DDB00785B6D /* HeaderView.m in Sources */,
 				F815E9E21DE3F04300440340 /* TestEightVC.m in Sources */,
 				F815E9921DDEBF3000440340 /* WLUnlockView.m in Sources */,
+				F84234741DE7DCEC003F5315 /* KVOModel.m in Sources */,
 				F815E9E81DE3F04300440340 /* TestSixVC.m in Sources */,
 				F815E9ED1DE3F2D900440340 /* SegmentedControlDefault.m in Sources */,
 				F815E9E61DE3F04300440340 /* TestOneVC.m in Sources */,
