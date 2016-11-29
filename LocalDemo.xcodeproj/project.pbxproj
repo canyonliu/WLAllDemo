@@ -46,6 +46,9 @@
 		F821A6381DDE9DDB00785B6D /* WLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A62F1DDE9DDB00785B6D /* WLCollectionViewCell.m */; };
 		F821A6391DDE9DDB00785B6D /* WLCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A6311DDE9DDB00785B6D /* WLCollectionViewLayout.m */; };
 		F821A63A1DDE9DDB00785B6D /* WLCollectioView.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A6331DDE9DDB00785B6D /* WLCollectioView.m */; };
+		F83701391DED3141007A5F17 /* AssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83701371DED3141007A5F17 /* AssetsViewController.m */; };
+		F837013A1DED3141007A5F17 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83701381DED3141007A5F17 /* Media.xcassets */; };
+		F837015A1DED51F3007A5F17 /* Ass.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83701591DED51F3007A5F17 /* Ass.xcassets */; };
 		F842346F1DE70B0C003F5315 /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F842346E1DE70B0C003F5315 /* UIWindow+Extension.m */; };
 		F84234741DE7DCEC003F5315 /* KVOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F84234731DE7DCEC003F5315 /* KVOModel.m */; };
 		F84234781DE81823003F5315 /* PropertyRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84234771DE81823003F5315 /* PropertyRefreshViewController.m */; };
@@ -150,6 +153,10 @@
 		F821A6311DDE9DDB00785B6D /* WLCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectionViewLayout.m; sourceTree = "<group>"; };
 		F821A6321DDE9DDB00785B6D /* WLCollectioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCollectioView.h; sourceTree = "<group>"; };
 		F821A6331DDE9DDB00785B6D /* WLCollectioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectioView.m; sourceTree = "<group>"; };
+		F83701361DED3141007A5F17 /* AssetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetsViewController.h; sourceTree = "<group>"; };
+		F83701371DED3141007A5F17 /* AssetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetsViewController.m; sourceTree = "<group>"; };
+		F83701381DED3141007A5F17 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		F83701591DED51F3007A5F17 /* Ass.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Ass.xcassets; sourceTree = "<group>"; };
 		F842346D1DE70B0C003F5315 /* UIWindow+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Extension.h"; sourceTree = "<group>"; };
 		F842346E1DE70B0C003F5315 /* UIWindow+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Extension.m"; sourceTree = "<group>"; };
 		F84234721DE7DCEC003F5315 /* KVOModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOModel.h; sourceTree = "<group>"; };
@@ -361,6 +368,7 @@
 		F821A6061DDDA81600785B6D /* DetailDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F83701351DED3141007A5F17 /* 新建asset catlog实战 */,
 				F84234751DE817F9003F5315 /* 尝试改变VC的自建属性，界面会不会即时改变 */,
 				F84234711DE7DBC2003F5315 /* KVO和block的实战 */,
 				F842346C1DE70AED003F5315 /* CurTopViewController(获得当前可见的VC) */,
@@ -440,6 +448,17 @@
 				F821A6331DDE9DDB00785B6D /* WLCollectioView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F83701351DED3141007A5F17 /* 新建asset catlog实战 */ = {
+			isa = PBXGroup;
+			children = (
+				F83701361DED3141007A5F17 /* AssetsViewController.h */,
+				F83701371DED3141007A5F17 /* AssetsViewController.m */,
+				F83701381DED3141007A5F17 /* Media.xcassets */,
+				F83701591DED51F3007A5F17 /* Ass.xcassets */,
+			);
+			path = "新建asset catlog实战";
 			sourceTree = "<group>";
 		};
 		F842346C1DE70AED003F5315 /* CurTopViewController(获得当前可见的VC) */ = {
@@ -585,6 +604,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F837015A1DED51F3007A5F17 /* Ass.xcassets in Resources */,
+				F837013A1DED3141007A5F17 /* Media.xcassets in Resources */,
 				F821A5E01DDD5C0C00785B6D /* LaunchScreen.storyboard in Resources */,
 				F821A5DD1DDD5C0C00785B6D /* Assets.xcassets in Resources */,
 				F821A5DB1DDD5C0C00785B6D /* Main.storyboard in Resources */,
@@ -685,6 +706,7 @@
 				F815E9F01DE3F3C600440340 /* UIView+WLExtension.m in Sources */,
 				F821A6361DDE9DDB00785B6D /* SampleDayEvent.m in Sources */,
 				F815E9CE1DE3F01A00440340 /* StyleFiveVC.m in Sources */,
+				F83701391DED3141007A5F17 /* AssetsViewController.m in Sources */,
 				F821A6101DDDA9EE00785B6D /* GeneralLogViewController.m in Sources */,
 				F815E9BB1DE3177500440340 /* NSArray+WLSafeArray.m in Sources */,
 				F821A5D21DDD5C0C00785B6D /* main.m in Sources */,

@@ -17,6 +17,7 @@
 #import "UIWindow+Extension.h"
 #import "KVOModel.h"
 #import "PropertyRefreshViewController.h"
+#import "AssetsViewController.h"
 
 
 
@@ -100,7 +101,11 @@
                 [self.propVC setChangedString:  @"changed后"];
                
             });
+            
+        }else if(indexPath.row == 6){
+            [self.navigationController pushViewController:[AssetsViewController new] animated:YES];
         }
+        
 
 
         
@@ -224,6 +229,7 @@
                                           @"MethodSwizzing黑魔法实战",
                                           @"SegmentedControl实战",
                                           @"尝试改变VC的自建属性，界面会不会即时改变",
+                                          @"新建assetsViewController",
                                           nil];
         
 
