@@ -100,12 +100,108 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LocalDemo/DemoListViewController.m"
-            timestampString = "501739698.742337"
+            timestampString = "501750885.279693"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LocalDemo/DetailDemo/&#x5c1d;&#x8bd5;&#x6539;&#x53d8;VC&#x7684;&#x81ea;&#x5efa;&#x5c5e;&#x6027;&#xff0c;&#x754c;&#x9762;&#x4f1a;&#x4e0d;&#x4f1a;&#x5373;&#x65f6;&#x6539;&#x53d8;/PropertyRefreshViewController.m"
+            timestampString = "501774125.986869"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "-propertyLabel"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LocalDemo/DetailDemo/&#x5c1d;&#x8bd5;&#x6539;&#x53d8;VC&#x7684;&#x81ea;&#x5efa;&#x5c5e;&#x6027;&#xff0c;&#x754c;&#x9762;&#x4f1a;&#x4e0d;&#x4f1a;&#x5373;&#x65f6;&#x6539;&#x53d8;/PropertyRefreshViewController.m"
+            timestampString = "501774184.143311"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "-setChangedString:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LocalDemo/DetailDemo/&#x5c1d;&#x8bd5;&#x6539;&#x53d8;VC&#x7684;&#x81ea;&#x5efa;&#x5c5e;&#x6027;&#xff0c;&#x754c;&#x9762;&#x4f1a;&#x4e0d;&#x4f1a;&#x5373;&#x65f6;&#x6539;&#x53d8;/PropertyRefreshViewController.m"
+            timestampString = "501774125.986869"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "-setChangedString:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LocalDemo/DetailDemo/&#x5c1d;&#x8bd5;&#x6539;&#x53d8;VC&#x7684;&#x81ea;&#x5efa;&#x5c5e;&#x6027;&#xff0c;&#x754c;&#x9762;&#x4f1a;&#x4e0d;&#x4f1a;&#x5373;&#x65f6;&#x6539;&#x53d8;/PropertyRefreshViewController.m"
+            timestampString = "501772541.08557"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LocalDemo/DetailDemo/&#x5c1d;&#x8bd5;&#x6539;&#x53d8;VC&#x7684;&#x81ea;&#x5efa;&#x5c5e;&#x6027;&#xff0c;&#x754c;&#x9762;&#x4f1a;&#x4e0d;&#x4f1a;&#x5373;&#x65f6;&#x6539;&#x53d8;/PropertyRefreshViewController.m"
+            timestampString = "501774125.986869"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "-propertyLabel"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LocalDemo/DetailDemo/&#x5c1d;&#x8bd5;&#x6539;&#x53d8;VC&#x7684;&#x81ea;&#x5efa;&#x5c5e;&#x6027;&#xff0c;&#x754c;&#x9762;&#x4f1a;&#x4e0d;&#x4f1a;&#x5373;&#x65f6;&#x6539;&#x53d8;/PropertyRefreshViewController.m"
+            timestampString = "501774160.124822"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "-propertyLabel"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

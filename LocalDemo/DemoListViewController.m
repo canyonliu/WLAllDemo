@@ -16,7 +16,7 @@
 #import "SegmentedViewController.h"
 #import "UIWindow+Extension.h"
 #import "KVOModel.h"
-
+#import "PropertyRefreshViewController.h"
 
 
 
@@ -29,7 +29,8 @@
 @property (nonatomic,strong)GeneralLogViewController *logVC;
 
 @property (nonatomic,strong)KVOModel *kvoModel;
-
+///测试重写setter方法会不会即时刷新
+@property (nonatomic,strong)PropertyRefreshViewController *propVC;
 @end
 
 @implementation DemoListViewController
@@ -70,7 +71,6 @@
             [self presentViewController:[self logViewCtrl:self.dataSourceArray[indexPath.section][indexPath.row] detailTitle:self.kvoModel.name]  animated:YES completion:nil];
             
         }
-        
     }else{
         if (indexPath.row == 0) {
             JSPatchDemoViewController *jspatchVC = [[JSPatchDemoViewController alloc]init];
@@ -92,7 +92,16 @@
         }else if (indexPath.row == 4){
             SegmentedViewController *segmentVC = [[SegmentedViewController alloc]init];
             [self.navigationController pushViewController:segmentVC animated:YES];
+        }else if (indexPath.row == 5){
+            self.propVC.changedString = @"改变前";
+            [self.navigationController pushViewController:self.propVC animated:YES];
+            
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [self.propVC setChangedString:  @"changed后"];
+               
+            });
         }
+
 
         
     }
@@ -175,7 +184,7 @@
         //                __strong typeof(wself) sself = wself;
         //下列方法说明了合理使用setter方法是可以不刷新的情况下改变界面上的元素的
         [wself.logVC setMessage:name];
-        return @"晕不晕";
+        return @"block返回去";
         
     };
     
@@ -214,6 +223,7 @@
                                           @"Unlock手势解锁实战",
                                           @"MethodSwizzing黑魔法实战",
                                           @"SegmentedControl实战",
+                                          @"尝试改变VC的自建属性，界面会不会即时改变",
                                           nil];
         
 
@@ -232,6 +242,13 @@
     return _logVC;
 }
 
+- (PropertyRefreshViewController *)propVC{
+    if (!_propVC) {
+        _propVC = [[PropertyRefreshViewController alloc]init];
+        
+    }
+    return _propVC;
+}
 
 
 #pragma mark UIScrollViewDelegate

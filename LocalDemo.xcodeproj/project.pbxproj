@@ -48,6 +48,7 @@
 		F821A63A1DDE9DDB00785B6D /* WLCollectioView.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A6331DDE9DDB00785B6D /* WLCollectioView.m */; };
 		F842346F1DE70B0C003F5315 /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F842346E1DE70B0C003F5315 /* UIWindow+Extension.m */; };
 		F84234741DE7DCEC003F5315 /* KVOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F84234731DE7DCEC003F5315 /* KVOModel.m */; };
+		F84234781DE81823003F5315 /* PropertyRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84234771DE81823003F5315 /* PropertyRefreshViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +154,8 @@
 		F842346E1DE70B0C003F5315 /* UIWindow+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Extension.m"; sourceTree = "<group>"; };
 		F84234721DE7DCEC003F5315 /* KVOModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOModel.h; sourceTree = "<group>"; };
 		F84234731DE7DCEC003F5315 /* KVOModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOModel.m; sourceTree = "<group>"; };
+		F84234761DE81823003F5315 /* PropertyRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyRefreshViewController.h; sourceTree = "<group>"; };
+		F84234771DE81823003F5315 /* PropertyRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyRefreshViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -358,6 +361,7 @@
 		F821A6061DDDA81600785B6D /* DetailDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F84234751DE817F9003F5315 /* 尝试改变VC的自建属性，界面会不会即时改变 */,
 				F84234711DE7DBC2003F5315 /* KVO和block的实战 */,
 				F842346C1DE70AED003F5315 /* CurTopViewController(获得当前可见的VC) */,
 				F815E9BC1DE3EAD700440340 /* SegmentedControl实战 */,
@@ -455,6 +459,15 @@
 			);
 			name = "KVO和block的实战";
 			path = "KVO实战";
+			sourceTree = "<group>";
+		};
+		F84234751DE817F9003F5315 /* 尝试改变VC的自建属性，界面会不会即时改变 */ = {
+			isa = PBXGroup;
+			children = (
+				F84234761DE81823003F5315 /* PropertyRefreshViewController.h */,
+				F84234771DE81823003F5315 /* PropertyRefreshViewController.m */,
+			);
+			path = "尝试改变VC的自建属性，界面会不会即时改变";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -680,6 +693,7 @@
 				F815E9E51DE3F04300440340 /* TestNineVC.m in Sources */,
 				F821A6091DDDA85400785B6D /* UniqueString.m in Sources */,
 				F821A61D1DDDDA8A00785B6D /* JSPatchDemoViewController.m in Sources */,
+				F84234781DE81823003F5315 /* PropertyRefreshViewController.m in Sources */,
 				F815E9E71DE3F04300440340 /* TestSevenVC.m in Sources */,
 				F815E9EA1DE3F04300440340 /* TestTwoVC.m in Sources */,
 			);
