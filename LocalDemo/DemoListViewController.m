@@ -18,6 +18,7 @@
 #import "KVOModel.h"
 #import "PropertyRefreshViewController.h"
 #import "AssetsViewController.h"
+#import "WLRefreshViewController.h"
 
 
 
@@ -104,6 +105,8 @@
             
         }else if(indexPath.row == 6){
             [self.navigationController pushViewController:[AssetsViewController new] animated:YES];
+        }else if (indexPath.row == 7){
+            [self.navigationController pushViewController:[WLRefreshViewController new] animated:YES];
         }
         
 
@@ -230,6 +233,7 @@
                                           @"SegmentedControl实战",
                                           @"尝试改变VC的自建属性，界面会不会即时改变",
                                           @"新建assetsViewController",
+                                          @"自定义refresh控件",
                                           nil];
         
 

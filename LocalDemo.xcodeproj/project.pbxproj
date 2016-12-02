@@ -49,6 +49,7 @@
 		F83701391DED3141007A5F17 /* AssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83701371DED3141007A5F17 /* AssetsViewController.m */; };
 		F837013A1DED3141007A5F17 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83701381DED3141007A5F17 /* Media.xcassets */; };
 		F837015A1DED51F3007A5F17 /* Ass.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83701591DED51F3007A5F17 /* Ass.xcassets */; };
+		F837018F1DEFC8C6007A5F17 /* WLRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F837018E1DEFC8C6007A5F17 /* WLRefreshViewController.m */; };
 		F842346F1DE70B0C003F5315 /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F842346E1DE70B0C003F5315 /* UIWindow+Extension.m */; };
 		F84234741DE7DCEC003F5315 /* KVOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F84234731DE7DCEC003F5315 /* KVOModel.m */; };
 		F84234781DE81823003F5315 /* PropertyRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84234771DE81823003F5315 /* PropertyRefreshViewController.m */; };
@@ -157,6 +158,8 @@
 		F83701371DED3141007A5F17 /* AssetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetsViewController.m; sourceTree = "<group>"; };
 		F83701381DED3141007A5F17 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		F83701591DED51F3007A5F17 /* Ass.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Ass.xcassets; sourceTree = "<group>"; };
+		F837018D1DEFC8C6007A5F17 /* WLRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLRefreshViewController.h; sourceTree = "<group>"; };
+		F837018E1DEFC8C6007A5F17 /* WLRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLRefreshViewController.m; sourceTree = "<group>"; };
 		F842346D1DE70B0C003F5315 /* UIWindow+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Extension.h"; sourceTree = "<group>"; };
 		F842346E1DE70B0C003F5315 /* UIWindow+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Extension.m"; sourceTree = "<group>"; };
 		F84234721DE7DCEC003F5315 /* KVOModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOModel.h; sourceTree = "<group>"; };
@@ -368,16 +371,8 @@
 		F821A6061DDDA81600785B6D /* DetailDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F83701351DED3141007A5F17 /* 新建asset catlog实战 */,
-				F84234751DE817F9003F5315 /* 尝试改变VC的自建属性，界面会不会即时改变 */,
-				F84234711DE7DBC2003F5315 /* KVO和block的实战 */,
-				F842346C1DE70AED003F5315 /* CurTopViewController(获得当前可见的VC) */,
-				F815E9BC1DE3EAD700440340 /* SegmentedControl实战 */,
-				F815E9AF1DE3063700440340 /* MethodSwizzing实战 */,
-				F815E9961DDEC38200440340 /* 生成唯一字符串 */,
-				F815E98F1DDEBE9E00440340 /* UnlockView(手势解锁)实战 */,
-				F821A6211DDE9DDB00785B6D /* CollectioView(日历)实战 */,
-				F821A6151DDDD52200785B6D /* JSPatch实战 */,
+				F837015E1DED6247007A5F17 /* ____需要push类____ */,
+				F837015D1DED622E007A5F17 /* ____log信息类____ */,
 			);
 			path = DetailDemo;
 			sourceTree = "<group>";
@@ -459,6 +454,40 @@
 				F83701591DED51F3007A5F17 /* Ass.xcassets */,
 			);
 			path = "新建asset catlog实战";
+			sourceTree = "<group>";
+		};
+		F837015D1DED622E007A5F17 /* ____log信息类____ */ = {
+			isa = PBXGroup;
+			children = (
+				F84234711DE7DBC2003F5315 /* KVO和block的实战 */,
+				F842346C1DE70AED003F5315 /* CurTopViewController(获得当前可见的VC) */,
+				F815E9961DDEC38200440340 /* 生成唯一字符串 */,
+			);
+			name = "____log信息类____";
+			sourceTree = "<group>";
+		};
+		F837015E1DED6247007A5F17 /* ____需要push类____ */ = {
+			isa = PBXGroup;
+			children = (
+				F837018C1DEFC85C007A5F17 /* 自定义下拉刷新控件 */,
+				F83701351DED3141007A5F17 /* 新建asset catlog实战 */,
+				F84234751DE817F9003F5315 /* 尝试改变VC的自建属性，界面会不会即时改变 */,
+				F815E9BC1DE3EAD700440340 /* SegmentedControl实战 */,
+				F815E9AF1DE3063700440340 /* MethodSwizzing实战 */,
+				F815E98F1DDEBE9E00440340 /* UnlockView(手势解锁)实战 */,
+				F821A6211DDE9DDB00785B6D /* CollectioView(日历)实战 */,
+				F821A6151DDDD52200785B6D /* JSPatch实战 */,
+			);
+			name = "____需要push类____";
+			sourceTree = "<group>";
+		};
+		F837018C1DEFC85C007A5F17 /* 自定义下拉刷新控件 */ = {
+			isa = PBXGroup;
+			children = (
+				F837018D1DEFC8C6007A5F17 /* WLRefreshViewController.h */,
+				F837018E1DEFC8C6007A5F17 /* WLRefreshViewController.m */,
+			);
+			path = "自定义下拉刷新控件";
 			sourceTree = "<group>";
 		};
 		F842346C1DE70AED003F5315 /* CurTopViewController(获得当前可见的VC) */ = {
@@ -708,6 +737,7 @@
 				F815E9CE1DE3F01A00440340 /* StyleFiveVC.m in Sources */,
 				F83701391DED3141007A5F17 /* AssetsViewController.m in Sources */,
 				F821A6101DDDA9EE00785B6D /* GeneralLogViewController.m in Sources */,
+				F837018F1DEFC8C6007A5F17 /* WLRefreshViewController.m in Sources */,
 				F815E9BB1DE3177500440340 /* NSArray+WLSafeArray.m in Sources */,
 				F821A5D21DDD5C0C00785B6D /* main.m in Sources */,
 				F821A6051DDDA0EC00785B6D /* DemoListViewController.m in Sources */,

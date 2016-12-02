@@ -5,6 +5,17 @@
       "scale" : "1x"
     },
     {
+      "resizing" : {
+        "mode" : "3-part-vertical",
+        "center" : {
+          "mode" : "tile",
+          "height" : 331
+        },
+        "cap-insets" : {
+          "top" : 150,
+          "bottom" : 31
+        }
+      },
       "idiom" : "universal",
       "filename" : "guide_picture_page3@2x.png",
       "scale" : "2x"
