@@ -50,6 +50,7 @@
 		F837013A1DED3141007A5F17 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83701381DED3141007A5F17 /* Media.xcassets */; };
 		F837015A1DED51F3007A5F17 /* Ass.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83701591DED51F3007A5F17 /* Ass.xcassets */; };
 		F837018F1DEFC8C6007A5F17 /* WLRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F837018E1DEFC8C6007A5F17 /* WLRefreshViewController.m */; };
+		F83701921DF1518F007A5F17 /* WLRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = F83701911DF1518E007A5F17 /* WLRefreshView.m */; };
 		F842346F1DE70B0C003F5315 /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F842346E1DE70B0C003F5315 /* UIWindow+Extension.m */; };
 		F84234741DE7DCEC003F5315 /* KVOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F84234731DE7DCEC003F5315 /* KVOModel.m */; };
 		F84234781DE81823003F5315 /* PropertyRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84234771DE81823003F5315 /* PropertyRefreshViewController.m */; };
@@ -160,6 +161,8 @@
 		F83701591DED51F3007A5F17 /* Ass.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Ass.xcassets; sourceTree = "<group>"; };
 		F837018D1DEFC8C6007A5F17 /* WLRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLRefreshViewController.h; sourceTree = "<group>"; };
 		F837018E1DEFC8C6007A5F17 /* WLRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLRefreshViewController.m; sourceTree = "<group>"; };
+		F83701901DF1518E007A5F17 /* WLRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLRefreshView.h; sourceTree = "<group>"; };
+		F83701911DF1518E007A5F17 /* WLRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLRefreshView.m; sourceTree = "<group>"; };
 		F842346D1DE70B0C003F5315 /* UIWindow+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Extension.h"; sourceTree = "<group>"; };
 		F842346E1DE70B0C003F5315 /* UIWindow+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Extension.m"; sourceTree = "<group>"; };
 		F84234721DE7DCEC003F5315 /* KVOModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOModel.h; sourceTree = "<group>"; };
@@ -486,6 +489,8 @@
 			children = (
 				F837018D1DEFC8C6007A5F17 /* WLRefreshViewController.h */,
 				F837018E1DEFC8C6007A5F17 /* WLRefreshViewController.m */,
+				F83701901DF1518E007A5F17 /* WLRefreshView.h */,
+				F83701911DF1518E007A5F17 /* WLRefreshView.m */,
 			);
 			path = "自定义下拉刷新控件";
 			sourceTree = "<group>";
@@ -718,6 +723,7 @@
 				F815E9E21DE3F04300440340 /* TestEightVC.m in Sources */,
 				F815E9921DDEBF3000440340 /* WLUnlockView.m in Sources */,
 				F84234741DE7DCEC003F5315 /* KVOModel.m in Sources */,
+				F83701921DF1518F007A5F17 /* WLRefreshView.m in Sources */,
 				F815E9E81DE3F04300440340 /* TestSixVC.m in Sources */,
 				F815E9ED1DE3F2D900440340 /* SegmentedControlDefault.m in Sources */,
 				F815E9E61DE3F04300440340 /* TestOneVC.m in Sources */,

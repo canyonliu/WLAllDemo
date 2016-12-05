@@ -105,14 +105,24 @@
         alpha = 1;
     }
     _refreshView.alpha = alpha;
+//    @『『』』
+    
+    
+    
+    CGFloat originOffSet = -(offsetY + NaviBarHeight);
+    CGFloat scale = originOffSet /(_refreshImage.WL_width + RefreshViewHeight/1.5f);
+    NSLog(@"ddddd == %f",originOffSet);
+    
+    //控制背景图片的放大
+    CGFloat backOffSet = -(offsetY + _refreshBackImage.image.size.height*0.5 + RefreshViewHeight + NaviBarHeight);
+    NSLog(@"bbbbb--- %f",backOffSet);
+    if (backOffSet >=0) {
+        _refreshBackImage.WL_height = _refreshBackImage.image.size.height +   backOffSet;
+    }
     
     
     
     //控制中间image的行为
-    CGFloat originOffSet = -(offsetY + NaviBarHeight);
-    CGFloat scale = originOffSet /(_refreshImage.WL_width + RefreshViewHeight/1.5f);
-    NSLog(@"ddddd == %f",originOffSet);
-
     if (scale >= 1.23f) {
         //旋转
         if (!_isAnimation) {
@@ -244,9 +254,10 @@
         _mainTableView.dataSource = self;
         _mainTableView.separatorColor = [UIColor purpleColor];
         _mainTableView.separatorInset = UIEdgeInsetsMake(10, 50, 10, 10);
-//        _mainTableView.separatorStyle = UITableViewCellStyleDefault;
         _mainTableView.showsHorizontalScrollIndicator = NO;
         _mainTableView.showsVerticalScrollIndicator = YES;
+//        _mainTableView.contentInset = UIEdgeInsetsMake(self.refreshBackImage.image.size.height*0.5, 0, 0, 0);
+//        [_mainTableView insertSubview:self.refreshBackImage atIndex:0];
         [_mainTableView addSubview:self.refreshView];
 //        KVO太容易出事了
 //        [_mainTableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionPrior context:nil];
@@ -275,8 +286,8 @@
 
 - (UIImageView *)refreshBackImage{
     if (!_refreshBackImage) {
-        _refreshBackImage = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"blue"]];
-        _refreshBackImage.frame = CGRectMake(0, -RefreshViewHeight, self.view.WL_width, 2);
+        _refreshBackImage = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"scaleImage"]];
+        _refreshBackImage.frame = CGRectMake(0, -2*RefreshViewHeight, self.view.WL_width, RefreshViewHeight);
         _refreshBackImage.contentMode = UIViewContentModeScaleAspectFill;
     }
     return _refreshBackImage;
