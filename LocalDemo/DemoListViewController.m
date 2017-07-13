@@ -16,6 +16,8 @@
 #import "SegmentedViewController.h"
 #import "UIWindow+Extension.h"
 #import "KVOModel.h"
+#import "TestForApi.h"
+
 #import "PropertyRefreshViewController.h"
 #import "AssetsViewController.h"
 #import "WLRefreshViewController.h"
@@ -31,6 +33,9 @@
 @property (nonatomic,strong)GeneralLogViewController *logVC;
 
 @property (nonatomic,strong)KVOModel *kvoModel;
+
+@property (nonatomic,strong)TestForApi *apiModel;
+
 ///测试重写setter方法会不会即时刷新
 @property (nonatomic,strong)PropertyRefreshViewController *propVC;
 @end
@@ -72,7 +77,11 @@
 
             [self presentViewController:[self logViewCtrl:self.dataSourceArray[indexPath.section][indexPath.row] detailTitle:self.kvoModel.name]  animated:YES completion:nil];
             
+        }else if (indexPath.row == 3){
+            self.apiModel = [[TestForApi alloc]init];
+            [self presentViewController:[self logViewCtrl:nil detailTitle:self.apiModel.makeResult] animated:YES completion:nil];
         }
+        
     }else{
         if (indexPath.row == 0) {
             JSPatchDemoViewController *jspatchVC = [[JSPatchDemoViewController alloc]init];
@@ -223,6 +232,7 @@
                                          @"洗牌算法生成随机数",
                                          @"UIWindow的category",
                                          @"KVO实战",
+                                         @"api测试类",
                                          nil];
         
         NSMutableArray *pushSectionArr = [[NSMutableArray alloc]initWithObjects:

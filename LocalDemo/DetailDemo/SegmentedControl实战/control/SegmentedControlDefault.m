@@ -329,7 +329,7 @@ static CGFloat const indicatorViewTimeOfAnimation = 0.15;
     } else if (self.segmentedControlIndicatorType == segmentedControlIndicatorTypeCenter) {
         
         // 指示器默认在第一个选中位置
-        // 计算TitleLabel内容的Size
+        // 计算TitCleLabel内容的Size
         CGSize buttonSize = [self sizeWithText:firstButton.titleLabel.text font:[UIFont systemFontOfSize:btn_fontOfSize] maxSize:CGSizeMake(MAXFLOAT, self.frame.size.height)];
         
         // 改变原指示器样式

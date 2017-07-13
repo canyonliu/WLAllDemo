@@ -170,27 +170,30 @@
             UIButton *bt = self.selectedArray[i];
             //        string = [NSString stringWithFormat:@"tag_%ld",bt.tag];
             bt.selected = NO;
-            string = [string stringByAppendingString:[NSString stringWithFormat:@"t_%ld_",bt.tag]];
+            string = [string stringByAppendingString:[NSString stringWithFormat:@"t_%ld_",(long)bt.tag]];
         }
         NSString *userPwd = [userDefaluts objectForKey:@"user_password"];
         NSString *msg;
         if (userPwd) {
             if ([string isEqualToString:userPwd]) {
                 NSLog(@"it's ture");
-                msg = @"密码正确";
+                msg = @"密码正确！";
             }else{
                 NSLog(@"it's wrong");
-                msg = @"密码错误";
+                msg = @"密码错误~";
             }
-            GeneralLogViewController *logVC = [GeneralLogViewController initWithTitle:@"提示信息" detailTitle:msg];
-            UINavigationController *nav = (UINavigationController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-            UIViewController *vc = nav.viewControllers.firstObject;
-            [vc presentViewController:logVC animated:YES completion:nil];
             
             
         }else{
+            msg = @"您的密码已经被记录，请熟记！";
             [userDefaluts setObject:string forKey:@"user_password"];
         }
+        
+        GeneralLogViewController *logVC = [GeneralLogViewController initWithTitle:@"提示信息" detailTitle:msg];
+        UINavigationController *nav = (UINavigationController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+        UIViewController *vc = nav.viewControllers.firstObject;
+        [vc presentViewController:logVC animated:YES completion:nil];
+
  
     }
     //清除线

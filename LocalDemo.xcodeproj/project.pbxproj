@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4500352E1F14F2B50033985D /* TestForApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 4500352D1F14F2B50033985D /* TestForApi.m */; };
 		9D5F46A18A7ACEDB9D18A687 /* libPods-LocalDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41361AFB76452961AFFB66E8 /* libPods-LocalDemo.a */; };
 		F815E9921DDEBF3000440340 /* WLUnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9911DDEBF3000440340 /* WLUnlockView.m */; };
 		F815E9951DDEC07900440340 /* GeneralBaseLogItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9941DDEC07900440340 /* GeneralBaseLogItem.m */; };
@@ -46,6 +47,7 @@
 		F821A6381DDE9DDB00785B6D /* WLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A62F1DDE9DDB00785B6D /* WLCollectionViewCell.m */; };
 		F821A6391DDE9DDB00785B6D /* WLCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A6311DDE9DDB00785B6D /* WLCollectionViewLayout.m */; };
 		F821A63A1DDE9DDB00785B6D /* WLCollectioView.m in Sources */ = {isa = PBXBuildFile; fileRef = F821A6331DDE9DDB00785B6D /* WLCollectioView.m */; };
+		F82D662C1DF6CBE4003FAD68 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F82D662B1DF6CBE4003FAD68 /* WeiboSDK.bundle */; };
 		F83701391DED3141007A5F17 /* AssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83701371DED3141007A5F17 /* AssetsViewController.m */; };
 		F837013A1DED3141007A5F17 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83701381DED3141007A5F17 /* Media.xcassets */; };
 		F837015A1DED51F3007A5F17 /* Ass.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83701591DED51F3007A5F17 /* Ass.xcassets */; };
@@ -76,6 +78,8 @@
 /* Begin PBXFileReference section */
 		408029C9342F6538B4AF7D12 /* Pods-LocalDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocalDemo/Pods-LocalDemo.release.xcconfig"; sourceTree = "<group>"; };
 		41361AFB76452961AFFB66E8 /* libPods-LocalDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocalDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4500352C1F14F2B50033985D /* TestForApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestForApi.h; sourceTree = "<group>"; };
+		4500352D1F14F2B50033985D /* TestForApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestForApi.m; sourceTree = "<group>"; };
 		8BFCBC1788C2D632F293587D /* Pods-LocalDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocalDemo/Pods-LocalDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F815E9901DDEBF3000440340 /* WLUnlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLUnlockView.h; sourceTree = "<group>"; };
 		F815E9911DDEBF3000440340 /* WLUnlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLUnlockView.m; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 		F821A6311DDE9DDB00785B6D /* WLCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectionViewLayout.m; sourceTree = "<group>"; };
 		F821A6321DDE9DDB00785B6D /* WLCollectioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCollectioView.h; sourceTree = "<group>"; };
 		F821A6331DDE9DDB00785B6D /* WLCollectioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectioView.m; sourceTree = "<group>"; };
+		F82D662B1DF6CBE4003FAD68 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = WeiboSDK.bundle; path = LocalDemo/WeiboSDK.bundle; sourceTree = SOURCE_ROOT; };
 		F83701361DED3141007A5F17 /* AssetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetsViewController.h; sourceTree = "<group>"; };
 		F83701371DED3141007A5F17 /* AssetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetsViewController.m; sourceTree = "<group>"; };
 		F83701381DED3141007A5F17 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -204,6 +209,15 @@
 				408029C9342F6538B4AF7D12 /* Pods-LocalDemo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4500352B1F14F27F0033985D /* 测试API类 */ = {
+			isa = PBXGroup;
+			children = (
+				4500352C1F14F2B50033985D /* TestForApi.h */,
+				4500352D1F14F2B50033985D /* TestForApi.m */,
+			);
+			path = "测试API类";
 			sourceTree = "<group>";
 		};
 		F3532B110681DD2DF4E5FE3E /* Frameworks */ = {
@@ -453,6 +467,7 @@
 			children = (
 				F83701361DED3141007A5F17 /* AssetsViewController.h */,
 				F83701371DED3141007A5F17 /* AssetsViewController.m */,
+				F82D662B1DF6CBE4003FAD68 /* WeiboSDK.bundle */,
 				F83701381DED3141007A5F17 /* Media.xcassets */,
 				F83701591DED51F3007A5F17 /* Ass.xcassets */,
 			);
@@ -464,6 +479,7 @@
 			children = (
 				F84234711DE7DBC2003F5315 /* KVO和block的实战 */,
 				F842346C1DE70AED003F5315 /* CurTopViewController(获得当前可见的VC) */,
+				4500352B1F14F27F0033985D /* 测试API类 */,
 				F815E9961DDEC38200440340 /* 生成唯一字符串 */,
 			);
 			name = "____log信息类____";
@@ -643,6 +659,7 @@
 				F821A5E01DDD5C0C00785B6D /* LaunchScreen.storyboard in Resources */,
 				F821A5DD1DDD5C0C00785B6D /* Assets.xcassets in Resources */,
 				F821A5DB1DDD5C0C00785B6D /* Main.storyboard in Resources */,
+				F82D662C1DF6CBE4003FAD68 /* WeiboSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -739,6 +756,7 @@
 				F815E9B51DE306FC00440340 /* UIViewController+WLStatisticalViewController.m in Sources */,
 				F815E9CF1DE3F01A00440340 /* StyleNineVC.m in Sources */,
 				F815E9F01DE3F3C600440340 /* UIView+WLExtension.m in Sources */,
+				4500352E1F14F2B50033985D /* TestForApi.m in Sources */,
 				F821A6361DDE9DDB00785B6D /* SampleDayEvent.m in Sources */,
 				F815E9CE1DE3F01A00440340 /* StyleFiveVC.m in Sources */,
 				F83701391DED3141007A5F17 /* AssetsViewController.m in Sources */,
@@ -905,6 +923,10 @@
 				DEVELOPMENT_TEAM = AL7VT7FHH8;
 				INFOPLIST_FILE = LocalDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WB",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Baidu.LocalDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -919,6 +941,10 @@
 				DEVELOPMENT_TEAM = AL7VT7FHH8;
 				INFOPLIST_FILE = LocalDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WB",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Baidu.LocalDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
