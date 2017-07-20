@@ -31,8 +31,15 @@
 }
 
 - (void)returnBlock{
+//    self.kvoBlcok = ^NSString *(NSString *numberStr) {
+//        NSLog(@"number= - = %@",numberStr);
+//        return @"111";
+//    };
+    
     self.returnResult = self.kvoBlcok(@"model和View之间的交互，使用Block比KVO更好\n KVO在VC和Model之间交互更能发挥效用\n 此函数说明了合理使用setter方法是可以不刷新的情况下改变界面上的元素的");
     NSLog(@"returnResult: %@",self.returnResult);
+    
+
 
 }
 

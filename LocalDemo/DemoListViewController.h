@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface DemoListViewController : UIViewController
-
+@property (nonatomic,strong)UITableView *mainTableView;
 @end

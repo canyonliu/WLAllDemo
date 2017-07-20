@@ -21,12 +21,16 @@
 #import "PropertyRefreshViewController.h"
 #import "AssetsViewController.h"
 #import "WLRefreshViewController.h"
+#import "WLSpotlight.h"
 
+
+#define Push_VC_Count 9
+#define Log_VC_Count 4
 
 
 @interface DemoListViewController ()<UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic,strong)UITableView *mainTableView;
+
 
 @property (nonatomic,strong)NSMutableArray *dataSourceArray;
 
@@ -116,6 +120,8 @@
             [self.navigationController pushViewController:[AssetsViewController new] animated:YES];
         }else if (indexPath.row == 7){
             [self.navigationController pushViewController:[WLRefreshViewController new] animated:YES];
+        }else if (indexPath.row == 8){
+            [self.navigationController pushViewController:[WLSpotlight new] animated:YES];
         }
         
 
@@ -244,6 +250,7 @@
                                           @"尝试改变VC的自建属性，界面会不会即时改变",
                                           @"新建assetsViewController",
                                           @"自定义refresh控件",
+                                          @"spotlight尝试",
                                           nil];
         
 

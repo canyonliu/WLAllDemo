@@ -39,6 +39,23 @@
 }
 
 
+#pragma  mark spotlight 相关事件处理
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler{
+    NSString *identifier = userActivity.userInfo[@"kCSSearchableItemActivityIdentifier"];
+    UINavigationController *navi = (UINavigationController *)self.window.rootViewController;
+    
+    DemoListViewController *vc = [navi viewControllers][0];
+    UIImageView *img = [[UIImageView alloc]initWithFrame:CGRectMake(100, 200, 200, 200)];
+    [img setImage:[UIImage imageNamed:[NSString stringWithFormat:@"h%@",identifier]]];
+    [vc.mainTableView addSubview:img];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [img removeFromSuperview];
+    });
+    
+    return YES;
+}
+
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

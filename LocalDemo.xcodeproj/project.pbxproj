@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4500352E1F14F2B50033985D /* TestForApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 4500352D1F14F2B50033985D /* TestForApi.m */; };
+		451BDD601F209BF700103D74 /* WLSpotlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 451BDD5F1F209BF700103D74 /* WLSpotlight.m */; };
+		451BDD621F209C1300103D74 /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451BDD611F209C1300103D74 /* CoreSpotlight.framework */; };
 		9D5F46A18A7ACEDB9D18A687 /* libPods-LocalDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41361AFB76452961AFFB66E8 /* libPods-LocalDemo.a */; };
 		F815E9921DDEBF3000440340 /* WLUnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9911DDEBF3000440340 /* WLUnlockView.m */; };
 		F815E9951DDEC07900440340 /* GeneralBaseLogItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9941DDEC07900440340 /* GeneralBaseLogItem.m */; };
@@ -80,6 +82,9 @@
 		41361AFB76452961AFFB66E8 /* libPods-LocalDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocalDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4500352C1F14F2B50033985D /* TestForApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestForApi.h; sourceTree = "<group>"; };
 		4500352D1F14F2B50033985D /* TestForApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestForApi.m; sourceTree = "<group>"; };
+		451BDD5E1F209BF700103D74 /* WLSpotlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLSpotlight.h; sourceTree = "<group>"; };
+		451BDD5F1F209BF700103D74 /* WLSpotlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLSpotlight.m; sourceTree = "<group>"; };
+		451BDD611F209C1300103D74 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
 		8BFCBC1788C2D632F293587D /* Pods-LocalDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocalDemo/Pods-LocalDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F815E9901DDEBF3000440340 /* WLUnlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLUnlockView.h; sourceTree = "<group>"; };
 		F815E9911DDEBF3000440340 /* WLUnlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLUnlockView.m; sourceTree = "<group>"; };
@@ -181,6 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451BDD621F209C1300103D74 /* CoreSpotlight.framework in Frameworks */,
 				9D5F46A18A7ACEDB9D18A687 /* libPods-LocalDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,9 +226,19 @@
 			path = "测试API类";
 			sourceTree = "<group>";
 		};
+		451BDD5D1F209B9600103D74 /* spotlight实战 */ = {
+			isa = PBXGroup;
+			children = (
+				451BDD5E1F209BF700103D74 /* WLSpotlight.h */,
+				451BDD5F1F209BF700103D74 /* WLSpotlight.m */,
+			);
+			path = "spotlight实战";
+			sourceTree = "<group>";
+		};
 		F3532B110681DD2DF4E5FE3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				451BDD611F209C1300103D74 /* CoreSpotlight.framework */,
 				41361AFB76452961AFFB66E8 /* libPods-LocalDemo.a */,
 			);
 			name = Frameworks;
@@ -488,6 +504,7 @@
 		F837015E1DED6247007A5F17 /* ____需要push类____ */ = {
 			isa = PBXGroup;
 			children = (
+				451BDD5D1F209B9600103D74 /* spotlight实战 */,
 				F837018C1DEFC85C007A5F17 /* 自定义下拉刷新控件 */,
 				F83701351DED3141007A5F17 /* 新建asset catlog实战 */,
 				F84234751DE817F9003F5315 /* 尝试改变VC的自建属性，界面会不会即时改变 */,
@@ -741,6 +758,7 @@
 				F815E9921DDEBF3000440340 /* WLUnlockView.m in Sources */,
 				F84234741DE7DCEC003F5315 /* KVOModel.m in Sources */,
 				F83701921DF1518F007A5F17 /* WLRefreshView.m in Sources */,
+				451BDD601F209BF700103D74 /* WLSpotlight.m in Sources */,
 				F815E9E81DE3F04300440340 /* TestSixVC.m in Sources */,
 				F815E9ED1DE3F2D900440340 /* SegmentedControlDefault.m in Sources */,
 				F815E9E61DE3F04300440340 /* TestOneVC.m in Sources */,
