@@ -1,9 +1,13 @@
 PODS:
   - JazzHands (2.0.8)
-  - JSPatchPlatform (1.6.2):
-    - JSPatchPlatform/Core (= 1.6.2)
-  - JSPatchPlatform/Core (1.6.2)
-  - Masonry (1.0.2)
+  - JSPatch (1.1.3):
+    - JSPatch/Core (= 1.1.3)
+  - JSPatch/Core (1.1.3)
+  - JSPatchPlatform (1.6.6):
+    - JSPatchPlatform/Core (= 1.6.6)
+  - JSPatchPlatform/Core (1.6.6):
+    - JSPatch
+  - Masonry (1.1.0)
   - SVPullToRefresh (0.4.1)
 
 DEPENDENCIES:
@@ -14,10 +18,11 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   JazzHands: 355dc5c2b6fc38ee460d0ed7836c69539263f477
-  JSPatchPlatform: 105e331f1b899a397d2bc0300a9ace9f9d7b8f08
-  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  JSPatch: 02cfed591cb907bbfe80a346666e5a35fc2d349d
+  JSPatchPlatform: 8cc9aaebe21109d5fdfb4500384ddf38ed0990e9
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
 
 PODFILE CHECKSUM: 180454810cd1a2619b029c7a4e98465304974be8
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.1
