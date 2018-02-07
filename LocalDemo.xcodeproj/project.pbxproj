@@ -10,6 +10,18 @@
 		4500352E1F14F2B50033985D /* TestForApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 4500352D1F14F2B50033985D /* TestForApi.m */; };
 		451BDD601F209BF700103D74 /* WLSpotlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 451BDD5F1F209BF700103D74 /* WLSpotlight.m */; };
 		451BDD621F209C1300103D74 /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451BDD611F209C1300103D74 /* CoreSpotlight.framework */; };
+		452584FD1FCE8F3A000253E6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 452584FC1FCE8F3A000253E6 /* AudioToolbox.framework */; };
+		4535A2D51FE4FDE200D5248E /* WLIbeaconItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4535A2D41FE4FDE200D5248E /* WLIbeaconItem.m */; };
+		4535A3981FE50C2D00D5248E /* WLIbeaconsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4535A3971FE50C2D00D5248E /* WLIbeaconsViewController.m */; };
+		4535A39B1FE516A200D5248E /* WLAddIbeaconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4535A39A1FE516A200D5248E /* WLAddIbeaconViewController.m */; };
+		4535A3A21FE5216200D5248E /* WLIbeaconTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4535A3A01FE5216200D5248E /* WLIbeaconTableViewCell.m */; };
+		4535A3A31FE5216200D5248E /* WLIbeaconTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4535A3A11FE5216200D5248E /* WLIbeaconTableViewCell.xib */; };
+		4535A3A51FE5321A00D5248E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4535A3A41FE5321A00D5248E /* CoreBluetooth.framework */; };
+		45934C8B1FFF73970046AA53 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45934C8A1FFF73970046AA53 /* AVFoundation.framework */; };
+		45F8FAE91FC554F500A940A2 /* WLFeatureValidateLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F8FAE81FC554F500A940A2 /* WLFeatureValidateLog.m */; };
+		45F8FAEB1FC562B900A940A2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F8FAEA1FC562B900A940A2 /* CoreLocation.framework */; };
+		45F8FAED1FC562C200A940A2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F8FAEC1FC562C200A940A2 /* CoreTelephony.framework */; };
+		45F8FAEF1FC57A0C00A940A2 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F8FAEE1FC57A0C00A940A2 /* CoreMotion.framework */; };
 		9D5F46A18A7ACEDB9D18A687 /* libPods-LocalDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41361AFB76452961AFFB66E8 /* libPods-LocalDemo.a */; };
 		F815E9921DDEBF3000440340 /* WLUnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9911DDEBF3000440340 /* WLUnlockView.m */; };
 		F815E9951DDEC07900440340 /* GeneralBaseLogItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F815E9941DDEC07900440340 /* GeneralBaseLogItem.m */; };
@@ -85,6 +97,23 @@
 		451BDD5E1F209BF700103D74 /* WLSpotlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLSpotlight.h; sourceTree = "<group>"; };
 		451BDD5F1F209BF700103D74 /* WLSpotlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLSpotlight.m; sourceTree = "<group>"; };
 		451BDD611F209C1300103D74 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
+		452584FC1FCE8F3A000253E6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4535A2D31FE4FDE200D5248E /* WLIbeaconItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLIbeaconItem.h; sourceTree = "<group>"; };
+		4535A2D41FE4FDE200D5248E /* WLIbeaconItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLIbeaconItem.m; sourceTree = "<group>"; };
+		4535A3961FE50C2D00D5248E /* WLIbeaconsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLIbeaconsViewController.h; sourceTree = "<group>"; };
+		4535A3971FE50C2D00D5248E /* WLIbeaconsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLIbeaconsViewController.m; sourceTree = "<group>"; };
+		4535A3991FE516A200D5248E /* WLAddIbeaconViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLAddIbeaconViewController.h; sourceTree = "<group>"; };
+		4535A39A1FE516A200D5248E /* WLAddIbeaconViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLAddIbeaconViewController.m; sourceTree = "<group>"; };
+		4535A39F1FE5216200D5248E /* WLIbeaconTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLIbeaconTableViewCell.h; sourceTree = "<group>"; };
+		4535A3A01FE5216200D5248E /* WLIbeaconTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLIbeaconTableViewCell.m; sourceTree = "<group>"; };
+		4535A3A11FE5216200D5248E /* WLIbeaconTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WLIbeaconTableViewCell.xib; sourceTree = "<group>"; };
+		4535A3A41FE5321A00D5248E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		45934C8A1FFF73970046AA53 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		45F8FAE71FC554F500A940A2 /* WLFeatureValidateLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLFeatureValidateLog.h; sourceTree = "<group>"; };
+		45F8FAE81FC554F500A940A2 /* WLFeatureValidateLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLFeatureValidateLog.m; sourceTree = "<group>"; };
+		45F8FAEA1FC562B900A940A2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		45F8FAEC1FC562C200A940A2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		45F8FAEE1FC57A0C00A940A2 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		8BFCBC1788C2D632F293587D /* Pods-LocalDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocalDemo/Pods-LocalDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F815E9901DDEBF3000440340 /* WLUnlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLUnlockView.h; sourceTree = "<group>"; };
 		F815E9911DDEBF3000440340 /* WLUnlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLUnlockView.m; sourceTree = "<group>"; };
@@ -186,6 +215,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45934C8B1FFF73970046AA53 /* AVFoundation.framework in Frameworks */,
+				4535A3A51FE5321A00D5248E /* CoreBluetooth.framework in Frameworks */,
+				452584FD1FCE8F3A000253E6 /* AudioToolbox.framework in Frameworks */,
+				45F8FAEF1FC57A0C00A940A2 /* CoreMotion.framework in Frameworks */,
+				45F8FAED1FC562C200A940A2 /* CoreTelephony.framework in Frameworks */,
+				45F8FAEB1FC562B900A940A2 /* CoreLocation.framework in Frameworks */,
 				451BDD621F209C1300103D74 /* CoreSpotlight.framework in Frameworks */,
 				9D5F46A18A7ACEDB9D18A687 /* libPods-LocalDemo.a in Frameworks */,
 			);
@@ -235,9 +270,40 @@
 			path = "spotlight实战";
 			sourceTree = "<group>";
 		};
+		4535A2D21FE4FDAE00D5248E /* ibeacon实战 */ = {
+			isa = PBXGroup;
+			children = (
+				4535A2D31FE4FDE200D5248E /* WLIbeaconItem.h */,
+				4535A2D41FE4FDE200D5248E /* WLIbeaconItem.m */,
+				4535A3961FE50C2D00D5248E /* WLIbeaconsViewController.h */,
+				4535A3971FE50C2D00D5248E /* WLIbeaconsViewController.m */,
+				4535A3991FE516A200D5248E /* WLAddIbeaconViewController.h */,
+				4535A39A1FE516A200D5248E /* WLAddIbeaconViewController.m */,
+				4535A39F1FE5216200D5248E /* WLIbeaconTableViewCell.h */,
+				4535A3A01FE5216200D5248E /* WLIbeaconTableViewCell.m */,
+				4535A3A11FE5216200D5248E /* WLIbeaconTableViewCell.xib */,
+			);
+			path = "ibeacon实战";
+			sourceTree = "<group>";
+		};
+		45F8FAE61FC554AF00A940A2 /* iOS环境特征的获取测试 */ = {
+			isa = PBXGroup;
+			children = (
+				45F8FAE71FC554F500A940A2 /* WLFeatureValidateLog.h */,
+				45F8FAE81FC554F500A940A2 /* WLFeatureValidateLog.m */,
+			);
+			path = "iOS环境特征的获取测试";
+			sourceTree = "<group>";
+		};
 		F3532B110681DD2DF4E5FE3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45934C8A1FFF73970046AA53 /* AVFoundation.framework */,
+				4535A3A41FE5321A00D5248E /* CoreBluetooth.framework */,
+				452584FC1FCE8F3A000253E6 /* AudioToolbox.framework */,
+				45F8FAEE1FC57A0C00A940A2 /* CoreMotion.framework */,
+				45F8FAEC1FC562C200A940A2 /* CoreTelephony.framework */,
+				45F8FAEA1FC562B900A940A2 /* CoreLocation.framework */,
 				451BDD611F209C1300103D74 /* CoreSpotlight.framework */,
 				41361AFB76452961AFFB66E8 /* libPods-LocalDemo.a */,
 			);
@@ -493,6 +559,7 @@
 		F837015D1DED622E007A5F17 /* ____log信息类____ */ = {
 			isa = PBXGroup;
 			children = (
+				45F8FAE61FC554AF00A940A2 /* iOS环境特征的获取测试 */,
 				F84234711DE7DBC2003F5315 /* KVO和block的实战 */,
 				F842346C1DE70AED003F5315 /* CurTopViewController(获得当前可见的VC) */,
 				4500352B1F14F27F0033985D /* 测试API类 */,
@@ -504,6 +571,7 @@
 		F837015E1DED6247007A5F17 /* ____需要push类____ */ = {
 			isa = PBXGroup;
 			children = (
+				4535A2D21FE4FDAE00D5248E /* ibeacon实战 */,
 				451BDD5D1F209B9600103D74 /* spotlight实战 */,
 				F837018C1DEFC85C007A5F17 /* 自定义下拉刷新控件 */,
 				F83701351DED3141007A5F17 /* 新建asset catlog实战 */,
@@ -629,8 +697,11 @@
 						DevelopmentTeam = AL7VT7FHH8;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
-							com.apple.Keychain = {
+							com.apple.BackgroundModes = {
 								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
 							};
 						};
 					};
@@ -674,6 +745,7 @@
 				F837015A1DED51F3007A5F17 /* Ass.xcassets in Resources */,
 				F837013A1DED3141007A5F17 /* Media.xcassets in Resources */,
 				F821A5E01DDD5C0C00785B6D /* LaunchScreen.storyboard in Resources */,
+				4535A3A31FE5216200D5248E /* WLIbeaconTableViewCell.xib in Resources */,
 				F821A5DD1DDD5C0C00785B6D /* Assets.xcassets in Resources */,
 				F821A5DB1DDD5C0C00785B6D /* Main.storyboard in Resources */,
 				F82D662C1DF6CBE4003FAD68 /* WeiboSDK.bundle in Resources */,
@@ -751,6 +823,8 @@
 			files = (
 				F821A6351DDE9DDB00785B6D /* CalenderDataSource.m in Sources */,
 				F815E9E31DE3F04300440340 /* TestFiveVC.m in Sources */,
+				4535A2D51FE4FDE200D5248E /* WLIbeaconItem.m in Sources */,
+				4535A3981FE50C2D00D5248E /* WLIbeaconsViewController.m in Sources */,
 				F815E9C01DE3EB3000440340 /* SegmentedViewController.m in Sources */,
 				F821A63A1DDE9DDB00785B6D /* WLCollectioView.m in Sources */,
 				F821A6371DDE9DDB00785B6D /* HeaderView.m in Sources */,
@@ -767,8 +841,10 @@
 				F821A5D51DDD5C0C00785B6D /* AppDelegate.m in Sources */,
 				F821A6391DDE9DDB00785B6D /* WLCollectionViewLayout.m in Sources */,
 				F821A6341DDE9DDB00785B6D /* WLCollectionViewController.m in Sources */,
+				4535A3A21FE5216200D5248E /* WLIbeaconTableViewCell.m in Sources */,
 				F815EA011DE43B3A00440340 /* SegmentedControlBottomView.m in Sources */,
 				F815E9B81DE30BBB00440340 /* MethodSwizzleViewController.m in Sources */,
+				45F8FAE91FC554F500A940A2 /* WLFeatureValidateLog.m in Sources */,
 				F815E9E41DE3F04300440340 /* TestFourVC.m in Sources */,
 				F815E9E91DE3F04300440340 /* TestThreeVC.m in Sources */,
 				F815E9B51DE306FC00440340 /* UIViewController+WLStatisticalViewController.m in Sources */,
@@ -780,6 +856,7 @@
 				F83701391DED3141007A5F17 /* AssetsViewController.m in Sources */,
 				F821A6101DDDA9EE00785B6D /* GeneralLogViewController.m in Sources */,
 				F837018F1DEFC8C6007A5F17 /* WLRefreshViewController.m in Sources */,
+				4535A39B1FE516A200D5248E /* WLAddIbeaconViewController.m in Sources */,
 				F815E9BB1DE3177500440340 /* NSArray+WLSafeArray.m in Sources */,
 				F821A5D21DDD5C0C00785B6D /* main.m in Sources */,
 				F821A6051DDDA0EC00785B6D /* DemoListViewController.m in Sources */,
@@ -884,7 +961,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -925,7 +1002,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -937,9 +1014,9 @@
 			baseConfigurationReference = 8BFCBC1788C2D632F293587D /* Pods-LocalDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = LocalDemo/LocalDemo.entitlements;
 				DEVELOPMENT_TEAM = AL7VT7FHH8;
 				INFOPLIST_FILE = LocalDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -955,9 +1032,9 @@
 			baseConfigurationReference = 408029C9342F6538B4AF7D12 /* Pods-LocalDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = LocalDemo/LocalDemo.entitlements;
 				DEVELOPMENT_TEAM = AL7VT7FHH8;
 				INFOPLIST_FILE = LocalDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

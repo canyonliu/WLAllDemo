@@ -17,12 +17,15 @@
 #import "UIWindow+Extension.h"
 #import "KVOModel.h"
 #import "TestForApi.h"
+#import "WLFeatureValidateLog.h"
 
 #import "PropertyRefreshViewController.h"
 #import "AssetsViewController.h"
 #import "WLRefreshViewController.h"
 #import "WLSpotlight.h"
+#import "WLIbeaconsViewController.h"
 
+#import <CoreMotion/CoreMotion.h>
 
 #define Push_VC_Count 9
 #define Log_VC_Count 4
@@ -42,6 +45,8 @@
 
 ///测试重写setter方法会不会即时刷新
 @property (nonatomic,strong)PropertyRefreshViewController *propVC;
+
+@property (nonatomic,strong)WLFeatureValidateLog *featureLog;
 @end
 
 @implementation DemoListViewController
@@ -51,12 +56,54 @@
 }
 
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"☞ 欢迎来到lqc的Demo小屋 ☜";
     
     [self.view addSubview:self.mainTableView];
     [self.view bringSubviewToFront:self.mainTableView];
+//    [self post];
+    
+}
+
+- (void)dealloc{
+    [self.featureLog removeObserver:self forKeyPath:@"result"];
+}
+
+- (void)post{
+    //对请求路径的说明
+    //http://120.25.226.186:32812/login
+    //协议头+主机地址+接口名称
+    //协议头(http://)+主机地址(120.25.226.186:32812)+接口名称(login)
+    //POST请求需要修改请求方法为POST，并把参数转换为二进制数据设置为请求体
+    
+    //1.创建会话对象
+    NSURLSession *session = [NSURLSession sharedSession];
+    
+    //2.根据会话对象创建task
+    NSURL *url = [NSURL URLWithString:@"http://cp01-yangchengzhi.epc.baidu.com:8230/aps?service=package&action=api&uid=70A169DB86F17A89178D41D709574AA0879363413OMPJIPQMSM&ua=640_1136_iphone_9.2.0.0_0&ut=iPhone6%2C2_9.3.3&from=1099a&osname=baiduboxapp&osbranch=i0&cfrom=1099a&network=1_0&sid=156_266-583_1193-497_1037-397_819-485_1006-446_922-374_777-489_1014-571_1173-572_1174-584_1194-1002265_6421-1001843_5188-1002514_7123-1002429_6890-1002669_7608-1002350_6660-1002368_6703-1002527_7159-1002393_6780-1002579_7309-1002326_6595-1002646_7518"];
+    
+    //3.创建可变的请求对象
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    
+    //4.修改请求方法为POST
+    request.HTTPMethod = @"POST";
+    
+    //5.设置请求体
+    request.HTTPBody = [@"username=520it&pwd=520it&type=JSON" dataUsingEncoding:NSUTF8StringEncoding];
+    
+    //6.根据会话对象创建一个Task(发送请求）
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+        //8.解析数据
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+        NSLog(@"%@",dict);
+        
+    }];
+    
+    //7.执行任务
+    [dataTask resume];
 }
 
 
@@ -84,6 +131,11 @@
         }else if (indexPath.row == 3){
             self.apiModel = [[TestForApi alloc]init];
             [self presentViewController:[self logViewCtrl:nil detailTitle:self.apiModel.makeResult] animated:YES completion:nil];
+        }else if (indexPath.row == 4){
+            [self addObserverForAvarnessApi];
+
+            [self presentViewController:[self logViewCtrl:nil detailTitle:[self.featureLog makeResult]] animated:YES completion:nil];
+//            [self getUserActivity];
         }
         
     }else{
@@ -122,6 +174,8 @@
             [self.navigationController pushViewController:[WLRefreshViewController new] animated:YES];
         }else if (indexPath.row == 8){
             [self.navigationController pushViewController:[WLSpotlight new] animated:YES];
+        }else if (indexPath.row == 9){
+            [self.navigationController pushViewController:[WLIbeaconsViewController new] animated:YES];
         }
         
 
@@ -188,17 +242,33 @@
 
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
-    id oldValue = [change objectForKey:NSKeyValueChangeOldKey];
-    id newValue = [change objectForKey:NSKeyValueChangeNewKey];
-    [self.logVC setMessage:newValue];
 
-    NSLog(@"old == %@",oldValue);
-    NSLog(@"new == %@",newValue);
-    //当界面快要消失的时候，一定要记得移除KVO，这里用的地方不正确
-    [self.kvoModel removeObserver:self forKeyPath:@"name"];
+- (void)addObserverForAvarnessApi{
+    [self.featureLog addObserver:self forKeyPath:@"result" options:NSKeyValueObservingOptionNew context:nil];
+    
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
+    
+    if ([keyPath isEqualToString:@"name"]) {
+        id oldValue = [change objectForKey:NSKeyValueChangeOldKey];
+        id newValue = [change objectForKey:NSKeyValueChangeNewKey];
+        [self.logVC setMessage:newValue];
+        
+        NSLog(@"old == %@",oldValue);
+        NSLog(@"new == %@",newValue);
+        //当界面快要消失的时候，一定要记得移除KVO，这里用的地方不正确
+        [self.kvoModel removeObserver:self forKeyPath:@"name"];
+    }else if ([keyPath isEqualToString:@"result"]){
+        id newValue = [change objectForKey:NSKeyValueChangeNewKey];
+        [self.logVC setMessage:newValue];
+    }
+    
 
 }
+
+
+
 
 #pragma mark 设置block
 - (void)observerBlock{
@@ -239,6 +309,7 @@
                                          @"UIWindow的category",
                                          @"KVO实战",
                                          @"api测试类",
+                                         @"测试iOS框架中的一些环境特征能否获取",
                                          nil];
         
         NSMutableArray *pushSectionArr = [[NSMutableArray alloc]initWithObjects:
@@ -251,11 +322,28 @@
                                           @"新建assetsViewController",
                                           @"自定义refresh控件",
                                           @"spotlight尝试",
+                                          @"ibeacon实战",
                                           nil];
         
 
         [_dataSourceArray addObject:logSectionArr];
         [_dataSourceArray addObject:pushSectionArr];
+        // 测试valueForUndefinedKey崩溃
+        @try {
+            NSMutableDictionary *originDict = [NSMutableDictionary dictionary];
+            [originDict setObject:@"beauty" forKey:@"meili"];
+            NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithDictionary:[originDict valueForKeyPath:@"liu.qing"]];
+            NSLog(@"first dict ----- %@",dict);
+            [originDict setObject:@{@"liu":dict} forKey:@"tips"];
+            NSLog(@"originDict == %@",originDict);
+            dict = [[NSMutableDictionary alloc] initWithDictionary:[originDict valueForKeyPath:@"liu.qing"]];
+            NSLog(@"last dict ----- %@",dict);
+        } @catch (NSException *ex) {
+            NSLog(@"mmm %@",ex.description);
+        }
+        
+        NSDictionary *dict = nil;
+        NSString *str = dict[@"key"];
     }
     return _dataSourceArray;
 }
@@ -277,12 +365,18 @@
     return _propVC;
 }
 
+- (WLFeatureValidateLog *)featureLog{
+    if (!_featureLog) {
+        _featureLog = [[WLFeatureValidateLog alloc]init];
+    }
+    return _featureLog;
+}
+
 
 #pragma mark UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     NSLog(@"当前的offset:%.f",self.mainTableView.contentOffset.y);
 }
-
 
 
 @end

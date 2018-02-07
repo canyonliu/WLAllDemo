@@ -50,6 +50,61 @@
 }
 
 
+// 需要做一个事件响应的单独demo
+
+
+// 什么时候调用:只要事件一传递给一个控件，那么这个控件就会调用自己的这个方法
+// 作用:寻找并返回最合适的view
+// UIApplication -> [UIWindow hitTest:withEvent:]寻找最合适的view告诉系统
+// point:当前手指触摸的点
+// point:是方法调用者坐标系上的点
+//- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+//    // 1.判断下窗口能否接收事件
+//    if (self.userInteractionEnabled == NO || self.hidden == YES || self.alpha <= 0.01) return nil;
+//    // 2.判断下点在不在窗口上
+//    // 不在窗口上
+//    if ([self pointInside:point withEvent:event] == NO) return nil;
+//    // 3.从后往前遍历子控件数组
+//    int count = (int)self.subviews.count;
+//    for (int i = count - 1; i >= 0; i--) {
+//        // 获取子控件
+//        UIView *childView = self.subviews[i];
+//        // 坐标系的转换,把窗口上的点转换为子控件上的点
+//        // 把自己控件上的点转换成子控件上的点
+//        CGPoint childP = [self convertPoint:point toView:childView];
+//        UIView *fitView = [childView hitTest:childP withEvent:event];
+//        if (fitView) {
+//            // 如果能找到最合适的view
+//            return fitView;
+//        }
+//    }
+//    // 4.没有找到更合适的view，也就是没有比自己更合适的view
+//    return self;
+//}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+    // 想让控件随着手指移动而移动,监听手指移动
+    // 获取UITouch对象
+    UITouch *touch = [touches anyObject];
+    // 获取当前点的位置
+    CGPoint curP = [touch locationInView:self.view];
+    // 获取上一个点的位置
+    CGPoint preP = [touch previousLocationInView:self.view];
+    // 获取它们x轴的偏移量,每次都是相对上一次
+    CGFloat offsetX = curP.x - preP.x;
+    // 获取y轴的偏移量
+    CGFloat offsetY = curP.y - preP.y;
+    // 修改控件的形变或者frame,center,就可以控制控件的位置
+    // 形变也是相对上一次形变(平移)
+    // CGAffineTransformMakeTranslation:会把之前形变给清空,重新开始设置形变参数
+    // make:相对于最原始的位置形变
+    // CGAffineTransform t:相对这个t的形变的基础上再去形变
+    // 如果相对哪个形变再次形变,就传入它的形变
+//    CGAffineTransform transform = CGAffineTransformTranslate(self.transform, offsetX, offsetY);
+    
+}
+
+
 // 直接替换imp的方法
 
 //void (gOriginalViewDidAppear)(id, SEL , BOOL);
